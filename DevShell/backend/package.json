@@ -1,0 +1,30 @@
+{
+  "name": "devshell",
+  "version": "1.0.0",
+  "description": "Programming languages and it's stacks",
+  "main": "",
+  "scripts": {
+    "dev": "concurrently -n app,types -c green,blue \"tsx watch src/router.ts\" \"tsc --noEmit --watch --preserveWatchOutput\"",
+    "start": "tsx src/router.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "Yogaprakash",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}

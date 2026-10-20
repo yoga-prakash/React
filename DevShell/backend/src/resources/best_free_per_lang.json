@@ -1,0 +1,694 @@
+{
+  "description": "The single best free resource to start with for each language and subject, plus one for practice, one for reference and one for what to do next.",
+  "meta": {
+    "how_it_relates": "Every resource_id points to an entry in learning_resources.json. Every language_id matches programming_languages.json.",
+    "fields": {
+      "best_free": "The one resource to start with. Always free.",
+      "practice": "Where to practise what you learned (often Exercism). Always free.",
+      "reference": "What to open when you need to look something up. Always free. Can be empty.",
+      "next_step": "What to do after the basics. Check its cost field because a few next steps are freemium.",
+      "note": "Extra advice or an honest warning."
+    },
+    "honesty_note": "These are judgement calls, not rankings from a test. Everything picked to start with is free. Some languages (PHP, Ruby, Kotlin, R, Dart, Assembly) have fewer great free beginner resources, and the notes say so.",
+    "link_check_note": "Links come from learning_resources.json and were written from memory, so click through to confirm."
+  },
+  "languages": [
+    {
+      "language_id": 1,
+      "name": "C",
+      "best_free": {
+        "resource_id": "beej_c",
+        "name": "Beej's Guide to C Programming",
+        "url": "https://beej.us/guide/bgc/",
+        "cost": "free",
+        "why": "Clear, friendly, covers pointers and memory properly, which is the hard part of C."
+      },
+      "practice": {
+        "resource_id": "exercism",
+        "name": "Exercism",
+        "url": "https://exercism.org/",
+        "cost": "free"
+      },
+      "reference": {
+        "resource_id": "cppreference_c",
+        "name": "cppreference - C",
+        "url": "https://en.cppreference.com/w/c",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "csapp_cmu",
+        "name": "CMU 15-213: Computer Systems",
+        "url": "https://www.cs.cmu.edu/~213/",
+        "cost": "free",
+        "why": "Shows what your C code does inside the computer."
+      }
+    },
+    {
+      "language_id": 2,
+      "name": "C++",
+      "best_free": {
+        "resource_id": "learncpp",
+        "name": "LearnCpp.com",
+        "url": "https://www.learncpp.com/",
+        "cost": "free",
+        "why": "The most complete free C++ course, written for modern C++ and updated often."
+      },
+      "practice": {
+        "resource_id": "cses",
+        "name": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "cost": "free"
+      },
+      "reference": {
+        "resource_id": "cppreference_cpp",
+        "name": "cppreference - C++",
+        "url": "https://en.cppreference.com/w/cpp",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "cpp_core_guidelines",
+        "name": "C++ Core Guidelines",
+        "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines",
+        "cost": "free",
+        "why": "Teaches you to write safe, clean C++ once the basics are comfortable."
+      },
+      "note": "CSES is the practice pick because C++ jobs and interviews lean on algorithm problems."
+    },
+    {
+      "language_id": 3,
+      "name": "Rust",
+      "best_free": {
+        "resource_id": "rust_book",
+        "name": "The Rust Programming Language",
+        "url": "https://doc.rust-lang.org/book/",
+        "cost": "free",
+        "why": "The official book, and the one everyone else's material is built around."
+      },
+      "practice": {
+        "resource_id": "rustlings",
+        "name": "Rustlings",
+        "url": "https://github.com/rust-lang/rustlings",
+        "cost": "free"
+      },
+      "reference": {
+        "resource_id": "rust_by_example",
+        "name": "Rust by Example",
+        "url": "https://doc.rust-lang.org/rust-by-example/",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "build_your_own_x",
+        "name": "Build Your Own X",
+        "url": "https://github.com/codecrafters-io/build-your-own-x",
+        "cost": "free",
+        "why": "Build a small real tool to make ownership rules stick."
+      },
+      "note": "Do Rustlings alongside the book, chapter by chapter."
+    },
+    {
+      "language_id": 4,
+      "name": "Assembly",
+      "best_free": {
+        "resource_id": "nand2tetris",
+        "name": "Nand2Tetris",
+        "url": "https://www.nand2tetris.org/",
+        "cost": "free",
+        "why": "Builds a computer from logic gates up, so assembly finally makes sense as hardware."
+      },
+      "practice": {
+        "resource_id": "godbolt",
+        "name": "Compiler Explorer",
+        "url": "https://godbolt.org/",
+        "cost": "free"
+      },
+      "reference": {
+        "resource_id": "azeria_arm_assembly",
+        "name": "Azeria Labs - Writing ARM Assembly",
+        "url": "https://azeria-labs.com/writing-arm-assembly-part-1/",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "csapp_cmu",
+        "name": "CMU 15-213: Computer Systems",
+        "url": "https://www.cs.cmu.edu/~213/",
+        "cost": "free",
+        "why": "Connects assembly to real programs and memory."
+      },
+      "note": "Azeria is the pick for real-world ARM assembly. Nand2Tetris teaches its own simple chip first."
+    },
+    {
+      "language_id": 5,
+      "name": "Go",
+      "best_free": {
+        "resource_id": "tour_of_go",
+        "name": "A Tour of Go",
+        "url": "https://go.dev/tour/",
+        "cost": "free",
+        "why": "Short, official, interactive, and Go is small enough that this covers most of it."
+      },
+      "practice": {
+        "resource_id": "exercism",
+        "name": "Exercism",
+        "url": "https://exercism.org/",
+        "cost": "free"
+      },
+      "reference": {
+        "resource_id": "effective_go",
+        "name": "Effective Go",
+        "url": "https://go.dev/doc/effective_go",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "learn_go_with_tests",
+        "name": "Learn Go with Tests",
+        "url": "https://quii.gitbook.io/learn-go-with-tests",
+        "cost": "free",
+        "why": "Teaches testing and good habits while you keep learning Go."
+      }
+    },
+    {
+      "language_id": 6,
+      "name": "Java",
+      "best_free": {
+        "resource_id": "moocfi_java",
+        "name": "MOOC.fi Java Programming",
+        "url": "https://java-programming.mooc.fi/",
+        "cost": "free",
+        "why": "A university course with lots of exercises, and it teaches object-oriented thinking well."
+      },
+      "practice": {
+        "resource_id": "exercism",
+        "name": "Exercism",
+        "url": "https://exercism.org/",
+        "cost": "free"
+      },
+      "reference": {
+        "resource_id": "dev_java",
+        "name": "Dev.java Learn",
+        "url": "https://dev.java/learn/",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "spring_guides",
+        "name": "Spring Guides",
+        "url": "https://spring.io/guides",
+        "cost": "free",
+        "why": "Spring is what most Java jobs actually use."
+      },
+      "note": "Learn core Java first, then move to Spring."
+    },
+    {
+      "language_id": 7,
+      "name": "C#",
+      "best_free": {
+        "resource_id": "dotnet_learn",
+        "name": ".NET Learn",
+        "url": "https://dotnet.microsoft.com/en-us/learn",
+        "cost": "free",
+        "why": "Microsoft's own free learning paths, kept current, with a clear route to web apps."
+      },
+      "practice": {
+        "resource_id": "exercism",
+        "name": "Exercism",
+        "url": "https://exercism.org/",
+        "cost": "free"
+      },
+      "reference": {
+        "resource_id": "csharp_tour",
+        "name": "A Tour of C# (Microsoft Learn)",
+        "url": "https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "unity_learn",
+        "name": "Unity Learn",
+        "url": "https://learn.unity.com/",
+        "cost": "freemium",
+        "why": "Pick this if games are your goal; otherwise continue with ASP.NET Core on the same site."
+      },
+      "note": "Unity Learn is freemium, so choose the pathways marked free."
+    },
+    {
+      "language_id": 8,
+      "name": "Python",
+      "best_free": {
+        "resource_id": "cs50p",
+        "name": "Harvard CS50P (Python)",
+        "url": "https://cs50.harvard.edu/python/",
+        "cost": "free",
+        "why": "Free university course with exercises and a clear order, so you are never lost."
+      },
+      "practice": {
+        "resource_id": "exercism",
+        "name": "Exercism",
+        "url": "https://exercism.org/",
+        "cost": "free"
+      },
+      "reference": {
+        "resource_id": "python_tutorial",
+        "name": "The Python Tutorial (official)",
+        "url": "https://docs.python.org/3/tutorial/",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "automate_boring_stuff",
+        "name": "Automate the Boring Stuff with Python",
+        "url": "https://automatetheboringstuff.com/",
+        "cost": "free",
+        "why": "Practical projects that make you use what you learned."
+      },
+      "note": "For web: Django tutorial. For data and AI: Kaggle Learn. Both are in the main resources file."
+    },
+    {
+      "language_id": 9,
+      "name": "JavaScript",
+      "best_free": {
+        "resource_id": "javascript_info",
+        "name": "The Modern JavaScript Tutorial",
+        "url": "https://javascript.info/",
+        "cost": "free",
+        "why": "Goes from beginner to deep topics like async and closures, with exercises."
+      },
+      "practice": {
+        "resource_id": "exercism",
+        "name": "Exercism",
+        "url": "https://exercism.org/",
+        "cost": "free"
+      },
+      "reference": {
+        "resource_id": "mdn_learn_web",
+        "name": "MDN Learn Web Development",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "full_stack_open",
+        "name": "Full Stack Open",
+        "url": "https://fullstackopen.com/en/",
+        "cost": "free",
+        "why": "Builds real apps with React and Node after you know the basics."
+      },
+      "note": "Learn some HTML and CSS first (MDN) if you want to use JavaScript for websites."
+    },
+    {
+      "language_id": 10,
+      "name": "TypeScript",
+      "best_free": {
+        "resource_id": "typescript_for_js_programmers",
+        "name": "TypeScript for JavaScript Programmers",
+        "url": "https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html",
+        "cost": "free",
+        "why": "Fastest way in if you already know JavaScript."
+      },
+      "practice": {
+        "resource_id": "exercism",
+        "name": "Exercism",
+        "url": "https://exercism.org/",
+        "cost": "free"
+      },
+      "reference": {
+        "resource_id": "typescript_handbook",
+        "name": "TypeScript Handbook",
+        "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "full_stack_open",
+        "name": "Full Stack Open",
+        "url": "https://fullstackopen.com/en/",
+        "cost": "free",
+        "why": "Uses TypeScript in a real project."
+      },
+      "note": "Learn JavaScript first. Read the Handbook after this short intro."
+    },
+    {
+      "language_id": 11,
+      "name": "Kotlin",
+      "best_free": {
+        "resource_id": "kotlin_docs",
+        "name": "Kotlin Documentation - Getting Started",
+        "url": "https://kotlinlang.org/docs/getting-started.html",
+        "cost": "free",
+        "why": "The official docs have an interactive tour, and Kotlin is simple to pick up."
+      },
+      "practice": {
+        "resource_id": "exercism",
+        "name": "Exercism",
+        "url": "https://exercism.org/",
+        "cost": "free"
+      },
+      "reference": {
+        "resource_id": "kotlin_docs",
+        "name": "Kotlin Documentation - Getting Started",
+        "url": "https://kotlinlang.org/docs/getting-started.html",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "android_compose_basics",
+        "name": "Android Basics with Compose",
+        "url": "https://developer.android.com/courses/android-basics-compose/course",
+        "cost": "free",
+        "why": "Google's official free course for building Android apps."
+      },
+      "note": "Fewer great free options than Java or Python, so the official docs are the safest base."
+    },
+    {
+      "language_id": 12,
+      "name": "Swift",
+      "best_free": {
+        "resource_id": "hws_100_swiftui",
+        "name": "100 Days of SwiftUI",
+        "url": "https://www.hackingwithswift.com/100/swiftui",
+        "cost": "free",
+        "why": "Free, step-by-step, and takes you from zero to building iPhone apps."
+      },
+      "practice": {
+        "resource_id": "exercism",
+        "name": "Exercism",
+        "url": "https://exercism.org/",
+        "cost": "free"
+      },
+      "reference": {
+        "resource_id": "swift_book",
+        "name": "The Swift Programming Language",
+        "url": "https://docs.swift.org/swift-book/",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "apple_develop_in_swift",
+        "name": "Develop in Swift Tutorials (Apple)",
+        "url": "https://developer.apple.com/tutorials/app-dev-training",
+        "cost": "free",
+        "why": "Apple's own project-based tutorials."
+      },
+      "note": "You need a Mac to build apps."
+    },
+    {
+      "language_id": 13,
+      "name": "PHP",
+      "best_free": {
+        "resource_id": "php_the_right_way",
+        "name": "PHP: The Right Way",
+        "url": "https://phptherightway.com/",
+        "cost": "free",
+        "why": "Teaches modern PHP habits and security, which many older tutorials skip."
+      },
+      "practice": {
+        "resource_id": "exercism",
+        "name": "Exercism",
+        "url": "https://exercism.org/",
+        "cost": "free"
+      },
+      "reference": {
+        "resource_id": "php_manual",
+        "name": "PHP Manual",
+        "url": "https://www.php.net/manual/en/",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "laravel_bootcamp",
+        "name": "Laravel Bootcamp",
+        "url": "https://bootcamp.laravel.com/",
+        "cost": "free",
+        "why": "Laravel is what most PHP jobs use now."
+      },
+      "note": "Not a first-ever-code book. If you are brand new to programming, start with a general beginner course such as CS50x first."
+    },
+    {
+      "language_id": 14,
+      "name": "Ruby",
+      "best_free": {
+        "resource_id": "odin_project",
+        "name": "The Odin Project",
+        "url": "https://www.theodinproject.com/paths",
+        "cost": "free",
+        "why": "Has a complete free Ruby and Rails path with projects."
+      },
+      "practice": {
+        "resource_id": "ruby_koans",
+        "name": "Ruby Koans",
+        "url": "https://www.rubykoans.com/",
+        "cost": "free"
+      },
+      "reference": {
+        "resource_id": "ruby_quickstart",
+        "name": "Ruby in 20 Minutes",
+        "url": "https://www.ruby-lang.org/en/documentation/quickstart/",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "rails_guides",
+        "name": "Ruby on Rails Guides",
+        "url": "https://guides.rubyonrails.org/",
+        "cost": "free",
+        "why": "The official guides for building web apps in Rails."
+      },
+      "note": "Ruby has fewer great free beginner courses than other languages."
+    },
+    {
+      "language_id": 15,
+      "name": "SQL",
+      "best_free": {
+        "resource_id": "sqlbolt",
+        "name": "SQLBolt",
+        "url": "https://sqlbolt.com/",
+        "cost": "free",
+        "why": "Short interactive lessons you finish in an afternoon."
+      },
+      "practice": {
+        "resource_id": "sqlzoo",
+        "name": "SQLZoo",
+        "url": "https://sqlzoo.net/",
+        "cost": "free"
+      },
+      "reference": {
+        "resource_id": "postgres_tutorial",
+        "name": "PostgreSQL Tutorial (official)",
+        "url": "https://www.postgresql.org/docs/current/tutorial.html",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "use_the_index_luke",
+        "name": "Use The Index, Luke",
+        "url": "https://use-the-index-luke.com/",
+        "cost": "free",
+        "why": "Teaches how to make queries fast."
+      }
+    },
+    {
+      "language_id": 16,
+      "name": "R",
+      "best_free": {
+        "resource_id": "r4ds",
+        "name": "R for Data Science",
+        "url": "https://r4ds.hadley.nz/",
+        "cost": "free",
+        "why": "The standard free book for using R on real data."
+      },
+      "practice": {
+        "resource_id": "swirl",
+        "name": "swirl",
+        "url": "https://swirlstats.com/",
+        "cost": "free"
+      },
+      "reference": null,
+      "next_step": {
+        "resource_id": "islr",
+        "name": "An Introduction to Statistical Learning",
+        "url": "https://www.statlearning.com/",
+        "cost": "free",
+        "why": "The statistics behind the methods, with R examples."
+      },
+      "note": "R for Data Science assumes you want to work with data. For pure statistics, read ISLR alongside it."
+    },
+    {
+      "language_id": 17,
+      "name": "Dart",
+      "best_free": {
+        "resource_id": "dart_language",
+        "name": "Dart Language Tour",
+        "url": "https://dart.dev/language",
+        "cost": "free",
+        "why": "Official tour of the language, short and clear."
+      },
+      "practice": {
+        "resource_id": "dart_codelabs",
+        "name": "Dart Codelabs",
+        "url": "https://dart.dev/codelabs",
+        "cost": "free"
+      },
+      "reference": null,
+      "next_step": {
+        "resource_id": "flutter_docs",
+        "name": "Flutter Documentation",
+        "url": "https://docs.flutter.dev/",
+        "cost": "free",
+        "why": "Most Dart jobs are Flutter app building."
+      },
+      "note": "Dart is small. Most of your learning time goes into Flutter."
+    }
+  ],
+  "subjects": [
+    {
+      "subject": "DSA",
+      "name": "Data Structures and Algorithms",
+      "best_free": {
+        "resource_id": "visualgo",
+        "name": "VisuAlgo",
+        "url": "https://visualgo.net/",
+        "cost": "free",
+        "why": "Lets you watch each algorithm move step by step, which is the quickest way to understand it."
+      },
+      "practice": {
+        "resource_id": "cses",
+        "name": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "cs50x",
+        "name": "Harvard CS50x",
+        "url": "https://cs50.harvard.edu/x/",
+        "cost": "free"
+      },
+      "note": "Read about the idea, watch it in VisuAlgo, then solve problems."
+    },
+    {
+      "subject": "COA",
+      "name": "Computer Organization and Architecture",
+      "best_free": {
+        "resource_id": "nand2tetris",
+        "name": "Nand2Tetris",
+        "url": "https://www.nand2tetris.org/",
+        "cost": "free",
+        "why": "Builds a whole computer from basic parts."
+      },
+      "practice": {
+        "resource_id": "godbolt",
+        "name": "Compiler Explorer",
+        "url": "https://godbolt.org/",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "csapp_cmu",
+        "name": "CMU 15-213: Computer Systems",
+        "url": "https://www.cs.cmu.edu/~213/",
+        "cost": "free"
+      }
+    },
+    {
+      "subject": "DPSD",
+      "name": "Digital Principles and System Design",
+      "best_free": {
+        "resource_id": "allaboutcircuits_digital",
+        "name": "All About Circuits - Digital Textbook",
+        "url": "https://www.allaboutcircuits.com/textbook/digital/",
+        "cost": "free",
+        "why": "Free textbook covering gates, adders, multiplexers and flip-flops in order."
+      },
+      "practice": {
+        "resource_id": "circuitverse",
+        "name": "CircuitVerse",
+        "url": "https://circuitverse.org/",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "nand2tetris",
+        "name": "Nand2Tetris",
+        "url": "https://www.nand2tetris.org/",
+        "cost": "free"
+      },
+      "note": "Neso Academy videos are a good partner if you prefer watching."
+    },
+    {
+      "subject": "OS",
+      "name": "Operating Systems",
+      "best_free": {
+        "resource_id": "ostep",
+        "name": "Operating Systems: Three Easy Pieces",
+        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+        "cost": "free",
+        "why": "Free book that explains processes, memory and files in plain language."
+      },
+      "practice": {
+        "resource_id": "mit_6s081",
+        "name": "MIT 6.S081 Operating System Engineering",
+        "url": "https://pdos.csail.mit.edu/6.S081/",
+        "cost": "free"
+      },
+      "next_step": null
+    },
+    {
+      "subject": "CN",
+      "name": "Computer Networks",
+      "best_free": {
+        "resource_id": "cloudflare_learning",
+        "name": "Cloudflare Learning Center",
+        "url": "https://www.cloudflare.com/learning/",
+        "cost": "free",
+        "why": "Plain explanations of DNS, HTTP and security."
+      },
+      "practice": {
+        "resource_id": "beej_network",
+        "name": "Beej's Guide to Network Programming",
+        "url": "https://beej.us/guide/bgnet/",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "beej_network",
+        "name": "Beej's Guide to Network Programming",
+        "url": "https://beej.us/guide/bgnet/",
+        "cost": "free"
+      },
+      "note": "Beej's guide is for people who also want to write network code in C."
+    },
+    {
+      "subject": "DBMS",
+      "name": "Database Management Systems",
+      "best_free": {
+        "resource_id": "neso_academy",
+        "name": "Neso Academy (YouTube)",
+        "url": "https://www.youtube.com/@nesoacademy",
+        "cost": "free",
+        "why": "Syllabus-style lessons on normalisation, transactions and indexing."
+      },
+      "practice": {
+        "resource_id": "sqlbolt",
+        "name": "SQLBolt",
+        "url": "https://sqlbolt.com/",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "cmu_db_15445",
+        "name": "CMU 15-445 Database Systems",
+        "url": "https://15445.courses.cs.cmu.edu/",
+        "cost": "free"
+      },
+      "note": "Pair theory with SQL practice."
+    },
+    {
+      "subject": "OOP",
+      "name": "Object-Oriented Programming",
+      "best_free": {
+        "resource_id": "moocfi_java",
+        "name": "MOOC.fi Java Programming",
+        "url": "https://java-programming.mooc.fi/",
+        "cost": "free",
+        "why": "Teaches classes, objects and design through many exercises."
+      },
+      "practice": {
+        "resource_id": "exercism",
+        "name": "Exercism",
+        "url": "https://exercism.org/",
+        "cost": "free"
+      },
+      "next_step": {
+        "resource_id": "refactoring_guru",
+        "name": "Refactoring.Guru",
+        "url": "https://refactoring.guru/design-patterns",
+        "cost": "freemium"
+      },
+      "note": "Refactoring.Guru is freemium: the website is free, the book is paid."
+    }
+  ]
+}
