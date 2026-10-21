@@ -23,28 +23,114 @@
       "level": "low-level",
       "level_description": "Sits very close to the hardware. You manage memory yourself and your code talks almost directly to the processor and operating system, with very little between you and the machine.",
       "first_released": 1972,
-      "paradigms": ["procedural"],
+      "paradigms": [
+        "procedural"
+      ],
       "execution": "compiled",
       "typing": "static, weak",
       "memory_management": "manual (you allocate and free memory)",
       "learning_difficulty": "hard",
       "beginner_friendly": false,
-      "ides_and_editors": ["Visual Studio Code", "CLion", "Code::Blocks", "Eclipse CDT", "Vim/Neovim"],
-      "compilers_and_tools": ["GCC", "Clang", "Make", "CMake", "GDB", "Valgrind"],
+      "ides_and_editors": [
+        "Visual Studio Code",
+        "CLion",
+        "Code::Blocks",
+        "Eclipse CDT",
+        "Vim/Neovim"
+      ],
+      "compilers_and_tools": [
+        "GCC",
+        "Clang",
+        "Make",
+        "CMake",
+        "GDB",
+        "Valgrind"
+      ],
       "official_documentation": "https://en.cppreference.com/w/c",
       "documentation_note": "C is governed by an ISO standard (not freely readable); cppreference is the most widely used reference.",
-      "jobs": ["Embedded systems engineer", "Firmware developer", "Operating system / kernel developer", "Device driver developer", "IoT developer", "Compiler engineer", "Automotive software engineer"],
-      "industries": ["Automotive", "Aerospace", "Consumer electronics", "Telecom", "Semiconductor"],
-      "knowledge_required": [
-        { "subject": "COA", "topics": ["CPU structure and registers", "Memory hierarchy and cache", "How instructions run", "Number systems and data representation"], "depth": "in-depth" },
-        { "subject": "OS", "topics": ["Processes and threads", "Memory management", "System calls", "File systems"], "depth": "in-depth" },
-        { "subject": "DSA", "topics": ["Arrays, linked lists, stacks, queues", "Trees and hashing", "Sorting and searching"], "depth": "in-depth" },
-        { "subject": "DPSD", "topics": ["Number systems and binary codes", "Logic gates and Boolean algebra", "Adders and subtractors", "Multiplexers and decoders", "Flip-flops and registers", "Counters"], "depth": "intermediate" },
-        { "subject": "CN", "topics": ["Sockets", "Basic protocols"], "depth": "basic" }
+      "jobs": [
+        "Embedded systems engineer",
+        "Firmware developer",
+        "Operating system / kernel developer",
+        "Device driver developer",
+        "IoT developer",
+        "Compiler engineer",
+        "Automotive software engineer"
       ],
-      "recommended_degrees": ["B.E./B.Tech in Computer Science", "Electronics and Communication", "Electrical and Electronics", "Embedded Systems"],
-      "related_skills": ["Reading datasheets", "Debugging with hardware tools", "Pointers and memory layout", "Linux command line"],
-      "useful_certifications": ["Embedded systems certificates (ARM, Microchip)", "Linux Foundation certifications"],
+      "industries": [
+        "Automotive",
+        "Aerospace",
+        "Consumer electronics",
+        "Telecom",
+        "Semiconductor"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "COA",
+          "topics": [
+            "CPU structure and registers",
+            "Memory hierarchy and cache",
+            "How instructions run",
+            "Number systems and data representation"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "OS",
+          "topics": [
+            "Processes and threads",
+            "Memory management",
+            "System calls",
+            "File systems"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "DSA",
+          "topics": [
+            "Arrays, linked lists, stacks, queues",
+            "Trees and hashing",
+            "Sorting and searching"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "DPSD",
+          "topics": [
+            "Number systems and binary codes",
+            "Logic gates and Boolean algebra",
+            "Adders and subtractors",
+            "Multiplexers and decoders",
+            "Flip-flops and registers",
+            "Counters"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "CN",
+          "topics": [
+            "Sockets",
+            "Basic protocols"
+          ],
+          "depth": "basic"
+        }
+      ],
+      "recommended_degrees": [
+        "B.E./B.Tech in Computer Science",
+        "Electronics and Communication",
+        "Electrical and Electronics",
+        "Embedded Systems"
+      ],
+      "related_skills": [
+        "Reading datasheets",
+        "Debugging with hardware tools",
+        "Pointers and memory layout",
+        "Linux command line"
+      ],
+      "useful_certifications": [
+        "Embedded systems certificates (ARM, Microchip)",
+        "Linux Foundation certifications"
+      ],
       "salary_demand_note": "Steady demand; embedded roles are specialised and often well paid."
     },
     {
@@ -53,29 +139,118 @@
       "level": "low-level and high-level mix (often called mid-level)",
       "level_description": "Gives you close control over hardware and memory like C, but also adds powerful tools for organising big programs. You can work near the machine or build large complex software.",
       "first_released": 1985,
-      "paradigms": ["procedural", "object-oriented", "generic", "functional elements"],
+      "paradigms": [
+        "procedural",
+        "object-oriented",
+        "generic",
+        "functional elements"
+      ],
       "execution": "compiled",
       "typing": "static, strong-ish",
       "memory_management": "manual with helpers (smart pointers)",
       "learning_difficulty": "very hard",
       "beginner_friendly": false,
-      "ides_and_editors": ["Visual Studio", "CLion", "Visual Studio Code", "Qt Creator", "Xcode"],
-      "compilers_and_tools": ["GCC", "Clang", "MSVC", "CMake", "Conan/vcpkg", "GDB"],
+      "ides_and_editors": [
+        "Visual Studio",
+        "CLion",
+        "Visual Studio Code",
+        "Qt Creator",
+        "Xcode"
+      ],
+      "compilers_and_tools": [
+        "GCC",
+        "Clang",
+        "MSVC",
+        "CMake",
+        "Conan/vcpkg",
+        "GDB"
+      ],
       "official_documentation": "https://isocpp.org/",
       "documentation_note": "Day-to-day reference: https://en.cppreference.com/w/cpp",
-      "jobs": ["Game developer", "Game engine programmer", "High-frequency trading developer", "Systems software engineer", "Robotics engineer", "Graphics / rendering engineer", "Browser or database engine developer", "Autonomous vehicle software engineer"],
-      "industries": ["Gaming", "Finance (trading)", "Automotive", "Robotics", "Aerospace", "Simulation"],
-      "knowledge_required": [
-        { "subject": "DSA", "topics": ["All core structures", "Graphs", "Dynamic programming", "Complexity analysis"], "depth": "in-depth" },
-        { "subject": "COA", "topics": ["Cache behaviour", "Memory layout", "Pipelining basics"], "depth": "in-depth" },
-        { "subject": "OOP", "topics": ["Classes, inheritance, polymorphism", "Design patterns"], "depth": "in-depth" },
-        { "subject": "OS", "topics": ["Threads and concurrency", "Memory management"], "depth": "intermediate" },
-        { "subject": "Mathematics", "topics": ["Linear algebra (graphics/games)", "Probability (trading)"], "depth": "intermediate" },
-        { "subject": "CN", "topics": ["Sockets and networking basics"], "depth": "basic" }
+      "jobs": [
+        "Game developer",
+        "Game engine programmer",
+        "High-frequency trading developer",
+        "Systems software engineer",
+        "Robotics engineer",
+        "Graphics / rendering engineer",
+        "Browser or database engine developer",
+        "Autonomous vehicle software engineer"
       ],
-      "recommended_degrees": ["B.E./B.Tech in Computer Science", "Mathematics or Physics (for graphics/finance)", "Mechatronics (for robotics)"],
-      "related_skills": ["Competitive programming (very common in hiring)", "Multithreading", "Build systems", "Profiling and optimisation"],
-      "useful_certifications": ["C++ Institute CPA/CPP"],
+      "industries": [
+        "Gaming",
+        "Finance (trading)",
+        "Automotive",
+        "Robotics",
+        "Aerospace",
+        "Simulation"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "DSA",
+          "topics": [
+            "All core structures",
+            "Graphs",
+            "Dynamic programming",
+            "Complexity analysis"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "COA",
+          "topics": [
+            "Cache behaviour",
+            "Memory layout",
+            "Pipelining basics"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "OOP",
+          "topics": [
+            "Classes, inheritance, polymorphism",
+            "Design patterns"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "OS",
+          "topics": [
+            "Threads and concurrency",
+            "Memory management"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "Mathematics",
+          "topics": [
+            "Linear algebra (graphics/games)",
+            "Probability (trading)"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "CN",
+          "topics": [
+            "Sockets and networking basics"
+          ],
+          "depth": "basic"
+        }
+      ],
+      "recommended_degrees": [
+        "B.E./B.Tech in Computer Science",
+        "Mathematics or Physics (for graphics/finance)",
+        "Mechatronics (for robotics)"
+      ],
+      "related_skills": [
+        "Competitive programming (very common in hiring)",
+        "Multithreading",
+        "Build systems",
+        "Profiling and optimisation"
+      ],
+      "useful_certifications": [
+        "C++ Institute CPA/CPP"
+      ],
       "salary_demand_note": "High pay in trading and game engines, hiring is selective."
     },
     {
@@ -84,27 +259,103 @@
       "level": "low-level",
       "level_description": "Gives C-like control over hardware and speed, but the compiler enforces strict ownership rules that stop most memory bugs before the program even runs.",
       "first_released": 2015,
-      "paradigms": ["multi-paradigm", "functional-leaning", "systems"],
+      "paradigms": [
+        "multi-paradigm",
+        "functional-leaning",
+        "systems"
+      ],
       "execution": "compiled",
       "typing": "static, strong",
       "memory_management": "ownership and borrowing (no garbage collector, no manual freeing)",
       "learning_difficulty": "hard (steep at the start)",
       "beginner_friendly": false,
-      "ides_and_editors": ["Visual Studio Code with rust-analyzer", "RustRover", "CLion", "Neovim"],
-      "compilers_and_tools": ["rustc", "Cargo", "Clippy", "rustfmt"],
-      "official_documentation": "https://doc.rust-lang.org/book/",
-      "jobs": ["Systems programmer", "Blockchain / crypto developer", "WebAssembly developer", "Backend infrastructure engineer", "Embedded developer", "Security-focused software engineer", "Cloud networking engineer"],
-      "industries": ["Blockchain", "Cloud infrastructure", "Cybersecurity", "Embedded", "Browsers and operating systems"],
-      "knowledge_required": [
-        { "subject": "COA", "topics": ["Stack vs heap", "Memory layout", "How CPUs execute code"], "depth": "in-depth" },
-        { "subject": "OS", "topics": ["Processes and threads", "Concurrency", "File I/O"], "depth": "intermediate" },
-        { "subject": "DSA", "topics": ["Core structures", "Algorithms"], "depth": "in-depth" },
-        { "subject": "CN", "topics": ["Sockets", "Protocols (for network services)"], "depth": "intermediate" },
-        { "subject": "Cryptography basics", "topics": ["Hashing", "Public key concepts"], "depth": "basic" }
+      "ides_and_editors": [
+        "Visual Studio Code with rust-analyzer",
+        "RustRover",
+        "CLion",
+        "Neovim"
       ],
-      "recommended_degrees": ["B.E./B.Tech in Computer Science", "Computer Engineering", "Cybersecurity"],
-      "related_skills": ["Concurrency and async programming", "Linux", "Reading compiler error messages", "Prior C or C++ experience helps a lot"],
-      "useful_certifications": ["No major vendor certifications; open-source contributions carry weight"],
+      "compilers_and_tools": [
+        "rustc",
+        "Cargo",
+        "Clippy",
+        "rustfmt"
+      ],
+      "official_documentation": "https://doc.rust-lang.org/book/",
+      "jobs": [
+        "Systems programmer",
+        "Blockchain / crypto developer",
+        "WebAssembly developer",
+        "Backend infrastructure engineer",
+        "Embedded developer",
+        "Security-focused software engineer",
+        "Cloud networking engineer"
+      ],
+      "industries": [
+        "Blockchain",
+        "Cloud infrastructure",
+        "Cybersecurity",
+        "Embedded",
+        "Browsers and operating systems"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "COA",
+          "topics": [
+            "Stack vs heap",
+            "Memory layout",
+            "How CPUs execute code"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "OS",
+          "topics": [
+            "Processes and threads",
+            "Concurrency",
+            "File I/O"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "DSA",
+          "topics": [
+            "Core structures",
+            "Algorithms"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "CN",
+          "topics": [
+            "Sockets",
+            "Protocols (for network services)"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "Cryptography basics",
+          "topics": [
+            "Hashing",
+            "Public key concepts"
+          ],
+          "depth": "basic"
+        }
+      ],
+      "recommended_degrees": [
+        "B.E./B.Tech in Computer Science",
+        "Computer Engineering",
+        "Cybersecurity"
+      ],
+      "related_skills": [
+        "Concurrency and async programming",
+        "Linux",
+        "Reading compiler error messages",
+        "Prior C or C++ experience helps a lot"
+      ],
+      "useful_certifications": [
+        "No major vendor certifications; open-source contributions carry weight"
+      ],
       "salary_demand_note": "Fewer jobs than C++ today but growing quickly, and pay is strong."
     },
     {
@@ -113,27 +364,100 @@
       "level": "low-level",
       "level_description": "The closest you can get to the processor. Each line is nearly one instruction the chip understands, and every processor family has its own version.",
       "first_released": 1949,
-      "paradigms": ["imperative"],
+      "paradigms": [
+        "imperative"
+      ],
       "execution": "assembled into machine code",
       "typing": "none",
       "memory_management": "completely manual",
       "learning_difficulty": "very hard",
       "beginner_friendly": false,
-      "ides_and_editors": ["Visual Studio Code", "Keil uVision", "MPLAB X", "Ghidra and IDA (for analysis)", "emu8086"],
-      "compilers_and_tools": ["NASM", "GAS", "MASM", "GDB", "objdump"],
+      "ides_and_editors": [
+        "Visual Studio Code",
+        "Keil uVision",
+        "MPLAB X",
+        "Ghidra and IDA (for analysis)",
+        "emu8086"
+      ],
+      "compilers_and_tools": [
+        "NASM",
+        "GAS",
+        "MASM",
+        "GDB",
+        "objdump"
+      ],
       "official_documentation": "https://developer.arm.com/documentation",
       "documentation_note": "Depends on the chip. For x86 see the Intel Software Developer Manuals: https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html",
-      "jobs": ["Reverse engineer", "Malware analyst", "Firmware engineer", "Bootloader developer", "Compiler backend engineer", "Security researcher"],
-      "industries": ["Cybersecurity", "Semiconductor", "Embedded", "Defence"],
-      "knowledge_required": [
-        { "subject": "COA", "topics": ["Registers and instruction sets", "Addressing modes", "Pipelining", "Interrupts"], "depth": "in-depth" },
-        { "subject": "DPSD", "topics": ["Number systems and binary codes", "Logic gates and Boolean algebra", "Adders, subtractors and the ALU", "Multiplexers and decoders", "Flip-flops, registers and memory", "Counters and state machines"], "depth": "in-depth" },
-        { "subject": "OS", "topics": ["Boot process", "Memory management", "System calls"], "depth": "intermediate" },
-        { "subject": "C", "topics": ["Pointers", "How C turns into machine code"], "depth": "in-depth" }
+      "jobs": [
+        "Reverse engineer",
+        "Malware analyst",
+        "Firmware engineer",
+        "Bootloader developer",
+        "Compiler backend engineer",
+        "Security researcher"
       ],
-      "recommended_degrees": ["B.E./B.Tech in Computer Science", "Electronics and Communication", "Cybersecurity"],
-      "related_skills": ["Debuggers", "Binary and hexadecimal fluency", "Reading disassembly"],
-      "useful_certifications": ["OSCP", "GREM (malware analysis)", "CEH"],
+      "industries": [
+        "Cybersecurity",
+        "Semiconductor",
+        "Embedded",
+        "Defence"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "COA",
+          "topics": [
+            "Registers and instruction sets",
+            "Addressing modes",
+            "Pipelining",
+            "Interrupts"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "DPSD",
+          "topics": [
+            "Number systems and binary codes",
+            "Logic gates and Boolean algebra",
+            "Adders, subtractors and the ALU",
+            "Multiplexers and decoders",
+            "Flip-flops, registers and memory",
+            "Counters and state machines"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "OS",
+          "topics": [
+            "Boot process",
+            "Memory management",
+            "System calls"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "C",
+          "topics": [
+            "Pointers",
+            "How C turns into machine code"
+          ],
+          "depth": "in-depth"
+        }
+      ],
+      "recommended_degrees": [
+        "B.E./B.Tech in Computer Science",
+        "Electronics and Communication",
+        "Cybersecurity"
+      ],
+      "related_skills": [
+        "Debuggers",
+        "Binary and hexadecimal fluency",
+        "Reading disassembly"
+      ],
+      "useful_certifications": [
+        "OSCP",
+        "GREM (malware analysis)",
+        "CEH"
+      ],
       "salary_demand_note": "Rare skill, niche but valuable in security and chip companies."
     },
     {
@@ -142,27 +466,100 @@
       "level": "high-level",
       "level_description": "Simple, readable and fast. It hides most hardware details but still compiles to a fast standalone program, and it is designed to handle many tasks at once easily.",
       "first_released": 2009,
-      "paradigms": ["procedural", "concurrent"],
+      "paradigms": [
+        "procedural",
+        "concurrent"
+      ],
       "execution": "compiled",
       "typing": "static, strong",
       "memory_management": "garbage collected",
       "learning_difficulty": "easy to medium",
       "beginner_friendly": true,
-      "ides_and_editors": ["GoLand", "Visual Studio Code with Go extension", "Neovim"],
-      "compilers_and_tools": ["go toolchain", "Delve debugger", "golangci-lint"],
-      "official_documentation": "https://go.dev/doc/",
-      "jobs": ["Backend developer", "Cloud / DevOps engineer", "Site reliability engineer", "Microservices developer", "Infrastructure tooling developer"],
-      "industries": ["Cloud computing", "SaaS", "Fintech", "Networking"],
-      "knowledge_required": [
-        { "subject": "CN", "topics": ["HTTP and REST", "TCP/IP", "DNS", "Load balancing"], "depth": "intermediate" },
-        { "subject": "OS", "topics": ["Processes and threads", "Concurrency"], "depth": "intermediate" },
-        { "subject": "DSA", "topics": ["Core structures and algorithms"], "depth": "intermediate" },
-        { "subject": "DBMS", "topics": ["SQL", "Transactions", "Indexes"], "depth": "intermediate" },
-        { "subject": "Distributed systems", "topics": ["Microservices", "Message queues", "Caching"], "depth": "basic" }
+      "ides_and_editors": [
+        "GoLand",
+        "Visual Studio Code with Go extension",
+        "Neovim"
       ],
-      "recommended_degrees": ["B.E./B.Tech in Computer Science", "Information Technology", "BCA/MCA"],
-      "related_skills": ["Docker", "Kubernetes", "Linux", "Cloud platforms (AWS, GCP, Azure)", "CI/CD"],
-      "useful_certifications": ["CKA / CKAD (Kubernetes)", "AWS Certified Developer"],
+      "compilers_and_tools": [
+        "go toolchain",
+        "Delve debugger",
+        "golangci-lint"
+      ],
+      "official_documentation": "https://go.dev/doc/",
+      "jobs": [
+        "Backend developer",
+        "Cloud / DevOps engineer",
+        "Site reliability engineer",
+        "Microservices developer",
+        "Infrastructure tooling developer"
+      ],
+      "industries": [
+        "Cloud computing",
+        "SaaS",
+        "Fintech",
+        "Networking"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "CN",
+          "topics": [
+            "HTTP and REST",
+            "TCP/IP",
+            "DNS",
+            "Load balancing"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "OS",
+          "topics": [
+            "Processes and threads",
+            "Concurrency"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "DSA",
+          "topics": [
+            "Core structures and algorithms"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "DBMS",
+          "topics": [
+            "SQL",
+            "Transactions",
+            "Indexes"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "Distributed systems",
+          "topics": [
+            "Microservices",
+            "Message queues",
+            "Caching"
+          ],
+          "depth": "basic"
+        }
+      ],
+      "recommended_degrees": [
+        "B.E./B.Tech in Computer Science",
+        "Information Technology",
+        "BCA/MCA"
+      ],
+      "related_skills": [
+        "Docker",
+        "Kubernetes",
+        "Linux",
+        "Cloud platforms (AWS, GCP, Azure)",
+        "CI/CD"
+      ],
+      "useful_certifications": [
+        "CKA / CKAD (Kubernetes)",
+        "AWS Certified Developer"
+      ],
       "salary_demand_note": "Strong demand in cloud-focused companies."
     },
     {
@@ -171,59 +568,224 @@
       "level": "high-level",
       "level_description": "Runs on a virtual machine instead of directly on the hardware, so the same program works on any computer. It hides memory handling and focuses on structure and safety for large applications.",
       "first_released": 1995,
-      "paradigms": ["object-oriented", "functional elements"],
+      "paradigms": [
+        "object-oriented",
+        "functional elements"
+      ],
       "execution": "compiled to bytecode, runs on the JVM",
       "typing": "static, strong",
       "memory_management": "garbage collected",
       "learning_difficulty": "medium",
       "beginner_friendly": true,
-      "ides_and_editors": ["IntelliJ IDEA", "Eclipse", "Visual Studio Code", "NetBeans"],
-      "compilers_and_tools": ["JDK", "Maven", "Gradle", "JUnit"],
-      "frameworks": ["Spring Boot", "Hibernate", "Jakarta EE"],
-      "official_documentation": "https://docs.oracle.com/en/java/",
-      "jobs": ["Backend developer", "Enterprise application developer", "Android developer (legacy and mixed projects)", "Big data engineer", "QA automation engineer", "Banking and insurance software developer"],
-      "industries": ["Banking", "Insurance", "E-commerce", "IT services", "Telecom"],
-      "knowledge_required": [
-        { "subject": "OOP", "topics": ["Classes, inheritance, interfaces", "SOLID principles", "Design patterns"], "depth": "in-depth" },
-        { "subject": "DSA", "topics": ["Collections", "Sorting and searching", "Trees and graphs"], "depth": "in-depth" },
-        { "subject": "DBMS", "topics": ["SQL", "Normalisation", "Transactions"], "depth": "in-depth" },
-        { "subject": "CN", "topics": ["HTTP", "REST APIs"], "depth": "intermediate" },
-        { "subject": "OS", "topics": ["Threads", "Concurrency"], "depth": "intermediate" },
-        { "subject": "Software engineering", "topics": ["Testing", "Version control", "Agile"], "depth": "intermediate" }
+      "ides_and_editors": [
+        "IntelliJ IDEA",
+        "Eclipse",
+        "Visual Studio Code",
+        "NetBeans"
       ],
-      "recommended_degrees": ["B.E./B.Tech in Computer Science", "Information Technology", "BCA/MCA"],
-      "related_skills": ["Spring Boot", "SQL and an ORM", "Microservices", "Git", "Docker"],
-      "useful_certifications": ["Oracle Certified Professional Java SE", "Spring Professional certification"],
+      "compilers_and_tools": [
+        "JDK",
+        "Maven",
+        "Gradle",
+        "JUnit"
+      ],
+      "frameworks": [
+        "Spring Boot",
+        "Hibernate",
+        "Jakarta EE"
+      ],
+      "official_documentation": "https://docs.oracle.com/en/java/",
+      "jobs": [
+        "Backend developer",
+        "Enterprise application developer",
+        "Android developer (legacy and mixed projects)",
+        "Big data engineer",
+        "QA automation engineer",
+        "Banking and insurance software developer"
+      ],
+      "industries": [
+        "Banking",
+        "Insurance",
+        "E-commerce",
+        "IT services",
+        "Telecom"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "OOP",
+          "topics": [
+            "Classes, inheritance, interfaces",
+            "SOLID principles",
+            "Design patterns"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "DSA",
+          "topics": [
+            "Collections",
+            "Sorting and searching",
+            "Trees and graphs"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "DBMS",
+          "topics": [
+            "SQL",
+            "Normalisation",
+            "Transactions"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "CN",
+          "topics": [
+            "HTTP",
+            "REST APIs"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "OS",
+          "topics": [
+            "Threads",
+            "Concurrency"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "Software engineering",
+          "topics": [
+            "Testing",
+            "Version control",
+            "Agile"
+          ],
+          "depth": "intermediate"
+        }
+      ],
+      "recommended_degrees": [
+        "B.E./B.Tech in Computer Science",
+        "Information Technology",
+        "BCA/MCA"
+      ],
+      "related_skills": [
+        "Spring Boot",
+        "SQL and an ORM",
+        "Microservices",
+        "Git",
+        "Docker"
+      ],
+      "useful_certifications": [
+        "Oracle Certified Professional Java SE",
+        "Spring Professional certification"
+      ],
       "salary_demand_note": "Huge number of jobs, especially in service and product companies in India."
     },
     {
       "id": 7,
-      "name": "C#",
+      "name": "Csharp",
       "level": "high-level",
       "level_description": "Microsoft's language for building apps and games. It runs on a managed runtime that handles memory for you, so you focus on the application itself.",
       "first_released": 2000,
-      "paradigms": ["object-oriented", "functional elements", "component-based"],
+      "paradigms": [
+        "object-oriented",
+        "functional elements",
+        "component-based"
+      ],
       "execution": "compiled to intermediate code, runs on .NET",
       "typing": "static, strong",
       "memory_management": "garbage collected",
       "learning_difficulty": "medium",
       "beginner_friendly": true,
-      "ides_and_editors": ["Visual Studio", "JetBrains Rider", "Visual Studio Code"],
-      "compilers_and_tools": [".NET SDK", "NuGet", "Roslyn"],
-      "frameworks": ["ASP.NET Core", "Entity Framework", "Unity (games)", "MAUI"],
-      "official_documentation": "https://learn.microsoft.com/en-us/dotnet/csharp/",
-      "jobs": ["Backend / .NET developer", "Unity game developer", "Desktop application developer", "Enterprise software developer", "Azure cloud developer", "AR/VR developer"],
-      "industries": ["Enterprise software", "Gaming", "Healthcare IT", "Finance"],
-      "knowledge_required": [
-        { "subject": "OOP", "topics": ["Classes, interfaces, generics", "Design patterns"], "depth": "in-depth" },
-        { "subject": "DSA", "topics": ["Collections", "Algorithms"], "depth": "intermediate" },
-        { "subject": "DBMS", "topics": ["SQL Server", "Query design"], "depth": "intermediate" },
-        { "subject": "CN", "topics": ["HTTP", "REST APIs"], "depth": "intermediate" },
-        { "subject": "Mathematics", "topics": ["Vectors and basic geometry (game development)"], "depth": "basic" }
+      "ides_and_editors": [
+        "Visual Studio",
+        "JetBrains Rider",
+        "Visual Studio Code"
       ],
-      "recommended_degrees": ["B.E./B.Tech in Computer Science", "Information Technology", "BCA/MCA", "Game Design (for Unity paths)"],
-      "related_skills": ["ASP.NET Core", "SQL Server", "Azure", "Unity engine"],
-      "useful_certifications": ["Microsoft Azure Developer Associate", "Unity Certified Programmer"],
+      "compilers_and_tools": [
+        ".NET SDK",
+        "NuGet",
+        "Roslyn"
+      ],
+      "frameworks": [
+        "ASP.NET Core",
+        "Entity Framework",
+        "Unity (games)",
+        "MAUI"
+      ],
+      "official_documentation": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+      "jobs": [
+        "Backend / .NET developer",
+        "Unity game developer",
+        "Desktop application developer",
+        "Enterprise software developer",
+        "Azure cloud developer",
+        "AR/VR developer"
+      ],
+      "industries": [
+        "Enterprise software",
+        "Gaming",
+        "Healthcare IT",
+        "Finance"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "OOP",
+          "topics": [
+            "Classes, interfaces, generics",
+            "Design patterns"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "DSA",
+          "topics": [
+            "Collections",
+            "Algorithms"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "DBMS",
+          "topics": [
+            "SQL Server",
+            "Query design"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "CN",
+          "topics": [
+            "HTTP",
+            "REST APIs"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "Mathematics",
+          "topics": [
+            "Vectors and basic geometry (game development)"
+          ],
+          "depth": "basic"
+        }
+      ],
+      "recommended_degrees": [
+        "B.E./B.Tech in Computer Science",
+        "Information Technology",
+        "BCA/MCA",
+        "Game Design (for Unity paths)"
+      ],
+      "related_skills": [
+        "ASP.NET Core",
+        "SQL Server",
+        "Azure",
+        "Unity engine"
+      ],
+      "useful_certifications": [
+        "Microsoft Azure Developer Associate",
+        "Unity Certified Programmer"
+      ],
       "salary_demand_note": "Solid enterprise demand and a clear route into game development."
     },
     {
@@ -232,28 +794,122 @@
       "level": "high-level",
       "level_description": "Reads almost like plain English. It hides nearly all machine details, so you can focus on solving the problem instead of managing the computer.",
       "first_released": 1991,
-      "paradigms": ["object-oriented", "procedural", "functional elements"],
+      "paradigms": [
+        "object-oriented",
+        "procedural",
+        "functional elements"
+      ],
       "execution": "interpreted",
       "typing": "dynamic, strong",
       "memory_management": "garbage collected",
       "learning_difficulty": "easy",
       "beginner_friendly": true,
-      "ides_and_editors": ["PyCharm", "Visual Studio Code", "Jupyter Notebook", "Spyder", "Google Colab"],
-      "compilers_and_tools": ["pip", "venv", "Poetry", "pytest"],
-      "frameworks": ["Django", "Flask", "FastAPI", "NumPy", "Pandas", "TensorFlow", "PyTorch", "scikit-learn"],
-      "official_documentation": "https://docs.python.org/3/",
-      "jobs": ["Data scientist", "Machine learning engineer", "AI engineer", "Backend developer", "Data analyst", "Automation / scripting engineer", "Data engineer", "Cybersecurity analyst", "Researcher"],
-      "industries": ["AI and machine learning", "Analytics", "Finance", "Healthcare", "Research", "Web"],
-      "knowledge_required": [
-        { "subject": "Mathematics and Statistics", "topics": ["Probability", "Statistics", "Linear algebra", "Calculus basics"], "depth": "in-depth (for data science and AI roles)" },
-        { "subject": "DSA", "topics": ["Core structures", "Algorithms"], "depth": "intermediate" },
-        { "subject": "DBMS", "topics": ["SQL", "Data modelling"], "depth": "intermediate" },
-        { "subject": "Machine learning", "topics": ["Supervised and unsupervised learning", "Model evaluation", "Neural network basics"], "depth": "in-depth (for AI roles only)" },
-        { "subject": "CN", "topics": ["HTTP and APIs"], "depth": "basic" }
+      "ides_and_editors": [
+        "PyCharm",
+        "Visual Studio Code",
+        "Jupyter Notebook",
+        "Spyder",
+        "Google Colab"
       ],
-      "recommended_degrees": ["B.E./B.Tech in Computer Science", "Data Science or AI specialisation", "Statistics or Mathematics", "BCA/MCA"],
-      "related_skills": ["SQL", "Git", "Data visualisation", "Cloud platforms", "Docker"],
-      "useful_certifications": ["Google Data Analytics", "TensorFlow Developer", "AWS Machine Learning Specialty", "PCEP / PCAP (Python Institute)"],
+      "compilers_and_tools": [
+        "pip",
+        "venv",
+        "Poetry",
+        "pytest"
+      ],
+      "frameworks": [
+        "Django",
+        "Flask",
+        "FastAPI",
+        "NumPy",
+        "Pandas",
+        "TensorFlow",
+        "PyTorch",
+        "scikit-learn"
+      ],
+      "official_documentation": "https://docs.python.org/3/",
+      "jobs": [
+        "Data scientist",
+        "Machine learning engineer",
+        "AI engineer",
+        "Backend developer",
+        "Data analyst",
+        "Automation / scripting engineer",
+        "Data engineer",
+        "Cybersecurity analyst",
+        "Researcher"
+      ],
+      "industries": [
+        "AI and machine learning",
+        "Analytics",
+        "Finance",
+        "Healthcare",
+        "Research",
+        "Web"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "Mathematics and Statistics",
+          "topics": [
+            "Probability",
+            "Statistics",
+            "Linear algebra",
+            "Calculus basics"
+          ],
+          "depth": "in-depth (for data science and AI roles)"
+        },
+        {
+          "subject": "DSA",
+          "topics": [
+            "Core structures",
+            "Algorithms"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "DBMS",
+          "topics": [
+            "SQL",
+            "Data modelling"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "Machine learning",
+          "topics": [
+            "Supervised and unsupervised learning",
+            "Model evaluation",
+            "Neural network basics"
+          ],
+          "depth": "in-depth (for AI roles only)"
+        },
+        {
+          "subject": "CN",
+          "topics": [
+            "HTTP and APIs"
+          ],
+          "depth": "basic"
+        }
+      ],
+      "recommended_degrees": [
+        "B.E./B.Tech in Computer Science",
+        "Data Science or AI specialisation",
+        "Statistics or Mathematics",
+        "BCA/MCA"
+      ],
+      "related_skills": [
+        "SQL",
+        "Git",
+        "Data visualisation",
+        "Cloud platforms",
+        "Docker"
+      ],
+      "useful_certifications": [
+        "Google Data Analytics",
+        "TensorFlow Developer",
+        "AWS Machine Learning Specialty",
+        "PCEP / PCAP (Python Institute)"
+      ],
       "salary_demand_note": "One of the highest demands overall; AI roles pay most but need strong maths."
     },
     {
@@ -262,29 +918,117 @@
       "level": "high-level",
       "level_description": "The language of web browsers. It is far from the hardware and runs inside the browser or a runtime like Node.js, which handles everything low-level for you.",
       "first_released": 1995,
-      "paradigms": ["event-driven", "functional", "object-oriented (prototype-based)"],
+      "paradigms": [
+        "event-driven",
+        "functional",
+        "object-oriented (prototype-based)"
+      ],
       "execution": "interpreted / just-in-time compiled",
       "typing": "dynamic, weak",
       "memory_management": "garbage collected",
       "learning_difficulty": "easy to start, tricky to master",
       "beginner_friendly": true,
-      "ides_and_editors": ["Visual Studio Code", "WebStorm", "Sublime Text"],
-      "compilers_and_tools": ["Node.js", "npm / pnpm", "Vite", "ESLint", "Chrome DevTools"],
-      "frameworks": ["React", "Vue", "Angular", "Next.js", "Express", "React Native"],
+      "ides_and_editors": [
+        "Visual Studio Code",
+        "WebStorm",
+        "Sublime Text"
+      ],
+      "compilers_and_tools": [
+        "Node.js",
+        "npm / pnpm",
+        "Vite",
+        "ESLint",
+        "Chrome DevTools"
+      ],
+      "frameworks": [
+        "React",
+        "Vue",
+        "Angular",
+        "Next.js",
+        "Express",
+        "React Native"
+      ],
       "official_documentation": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       "documentation_note": "MDN is the standard reference. The formal language specification is at https://tc39.es/ecma262/",
-      "jobs": ["Frontend developer", "Full-stack developer", "Node.js backend developer", "Mobile app developer (React Native)", "Web designer-developer", "UI engineer"],
-      "industries": ["Web", "E-commerce", "Startups", "Media", "SaaS"],
-      "knowledge_required": [
-        { "subject": "Web fundamentals", "topics": ["HTML", "CSS", "How browsers work", "Accessibility"], "depth": "in-depth" },
-        { "subject": "CN", "topics": ["HTTP", "REST APIs", "Cookies and sessions", "Web security basics"], "depth": "intermediate" },
-        { "subject": "DSA", "topics": ["Arrays, objects, hashing", "Basic algorithms"], "depth": "intermediate" },
-        { "subject": "DBMS", "topics": ["SQL or MongoDB", "Basic data modelling"], "depth": "intermediate" },
-        { "subject": "Design sense", "topics": ["Layouts", "Responsive design", "UX basics"], "depth": "basic" }
+      "jobs": [
+        "Frontend developer",
+        "Full-stack developer",
+        "Node.js backend developer",
+        "Mobile app developer (React Native)",
+        "Web designer-developer",
+        "UI engineer"
       ],
-      "recommended_degrees": ["B.E./B.Tech in Computer Science", "BCA/MCA", "Self-taught with a strong portfolio also works well"],
-      "related_skills": ["TypeScript", "Git", "Testing", "Authentication and sessions", "Deployment"],
-      "useful_certifications": ["Meta Front-End Developer", "freeCodeCamp certifications", "Node.js certifications from OpenJS"],
+      "industries": [
+        "Web",
+        "E-commerce",
+        "Startups",
+        "Media",
+        "SaaS"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "Web fundamentals",
+          "topics": [
+            "HTML",
+            "CSS",
+            "How browsers work",
+            "Accessibility"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "CN",
+          "topics": [
+            "HTTP",
+            "REST APIs",
+            "Cookies and sessions",
+            "Web security basics"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "DSA",
+          "topics": [
+            "Arrays, objects, hashing",
+            "Basic algorithms"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "DBMS",
+          "topics": [
+            "SQL or MongoDB",
+            "Basic data modelling"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "Design sense",
+          "topics": [
+            "Layouts",
+            "Responsive design",
+            "UX basics"
+          ],
+          "depth": "basic"
+        }
+      ],
+      "recommended_degrees": [
+        "B.E./B.Tech in Computer Science",
+        "BCA/MCA",
+        "Self-taught with a strong portfolio also works well"
+      ],
+      "related_skills": [
+        "TypeScript",
+        "Git",
+        "Testing",
+        "Authentication and sessions",
+        "Deployment"
+      ],
+      "useful_certifications": [
+        "Meta Front-End Developer",
+        "freeCodeCamp certifications",
+        "Node.js certifications from OpenJS"
+      ],
       "salary_demand_note": "Extremely high demand; portfolio often matters more than the degree."
     },
     {
@@ -293,27 +1037,92 @@
       "level": "high-level",
       "level_description": "JavaScript with a safety net. You describe what kind of data each part holds, and mistakes get caught while writing instead of after users find them.",
       "first_released": 2012,
-      "paradigms": ["object-oriented", "functional", "event-driven"],
+      "paradigms": [
+        "object-oriented",
+        "functional",
+        "event-driven"
+      ],
       "execution": "compiled (translated) to JavaScript",
       "typing": "static, strong-ish",
       "memory_management": "garbage collected",
       "learning_difficulty": "medium (needs JavaScript first)",
       "beginner_friendly": false,
-      "ides_and_editors": ["Visual Studio Code", "WebStorm"],
-      "compilers_and_tools": ["tsc", "Node.js", "Vite", "ESLint"],
-      "frameworks": ["Angular", "NestJS", "Next.js", "React"],
-      "official_documentation": "https://www.typescriptlang.org/docs/",
-      "jobs": ["Frontend developer", "Full-stack developer", "Backend developer (NestJS)", "Large web application engineer"],
-      "industries": ["SaaS", "Startups", "Enterprise web", "Fintech"],
-      "knowledge_required": [
-        { "subject": "JavaScript", "topics": ["Closures", "Promises and async", "Modules"], "depth": "in-depth" },
-        { "subject": "OOP", "topics": ["Interfaces", "Generics"], "depth": "intermediate" },
-        { "subject": "CN", "topics": ["HTTP and REST APIs"], "depth": "intermediate" },
-        { "subject": "DBMS", "topics": ["SQL or NoSQL basics"], "depth": "intermediate" }
+      "ides_and_editors": [
+        "Visual Studio Code",
+        "WebStorm"
       ],
-      "recommended_degrees": ["B.E./B.Tech in Computer Science", "BCA/MCA", "Self-taught with a portfolio"],
-      "related_skills": ["React or Angular", "Testing", "Monorepos", "CI/CD"],
-      "useful_certifications": ["No major certifications; real projects matter most"],
+      "compilers_and_tools": [
+        "tsc",
+        "Node.js",
+        "Vite",
+        "ESLint"
+      ],
+      "frameworks": [
+        "Angular",
+        "NestJS",
+        "Next.js",
+        "React"
+      ],
+      "official_documentation": "https://www.typescriptlang.org/docs/",
+      "jobs": [
+        "Frontend developer",
+        "Full-stack developer",
+        "Backend developer (NestJS)",
+        "Large web application engineer"
+      ],
+      "industries": [
+        "SaaS",
+        "Startups",
+        "Enterprise web",
+        "Fintech"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "JavaScript",
+          "topics": [
+            "Closures",
+            "Promises and async",
+            "Modules"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "OOP",
+          "topics": [
+            "Interfaces",
+            "Generics"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "CN",
+          "topics": [
+            "HTTP and REST APIs"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "DBMS",
+          "topics": [
+            "SQL or NoSQL basics"
+          ],
+          "depth": "intermediate"
+        }
+      ],
+      "recommended_degrees": [
+        "B.E./B.Tech in Computer Science",
+        "BCA/MCA",
+        "Self-taught with a portfolio"
+      ],
+      "related_skills": [
+        "React or Angular",
+        "Testing",
+        "Monorepos",
+        "CI/CD"
+      ],
+      "useful_certifications": [
+        "No major certifications; real projects matter most"
+      ],
       "salary_demand_note": "Now expected in most serious web teams."
     },
     {
@@ -322,28 +1131,101 @@
       "level": "high-level",
       "level_description": "A modern, concise language that runs on the Java virtual machine. It is Google's preferred language for Android and hides hardware details completely.",
       "first_released": 2011,
-      "paradigms": ["object-oriented", "functional"],
+      "paradigms": [
+        "object-oriented",
+        "functional"
+      ],
       "execution": "compiled to bytecode (also native and JavaScript)",
       "typing": "static, strong",
       "memory_management": "garbage collected",
       "learning_difficulty": "easy to medium",
       "beginner_friendly": true,
-      "ides_and_editors": ["Android Studio", "IntelliJ IDEA"],
-      "compilers_and_tools": ["Gradle", "Kotlin compiler", "JUnit"],
-      "frameworks": ["Jetpack Compose", "Ktor", "Spring Boot", "Kotlin Multiplatform"],
-      "official_documentation": "https://kotlinlang.org/docs/home.html",
-      "jobs": ["Android developer", "Backend developer", "Cross-platform mobile developer"],
-      "industries": ["Mobile apps", "Fintech", "E-commerce", "Startups"],
-      "knowledge_required": [
-        { "subject": "OOP", "topics": ["Classes, interfaces", "Design patterns"], "depth": "in-depth" },
-        { "subject": "Mobile fundamentals", "topics": ["App lifecycle", "UI layouts", "Navigation", "Permissions"], "depth": "in-depth" },
-        { "subject": "DSA", "topics": ["Core structures", "Algorithms"], "depth": "intermediate" },
-        { "subject": "CN", "topics": ["REST APIs", "JSON"], "depth": "intermediate" },
-        { "subject": "DBMS", "topics": ["SQLite / Room", "Basic SQL"], "depth": "basic" }
+      "ides_and_editors": [
+        "Android Studio",
+        "IntelliJ IDEA"
       ],
-      "recommended_degrees": ["B.E./B.Tech in Computer Science", "Information Technology", "BCA/MCA"],
-      "related_skills": ["Java basics", "Material Design", "Firebase", "Play Store publishing", "Coroutines"],
-      "useful_certifications": ["Associate Android Developer (Google)"],
+      "compilers_and_tools": [
+        "Gradle",
+        "Kotlin compiler",
+        "JUnit"
+      ],
+      "frameworks": [
+        "Jetpack Compose",
+        "Ktor",
+        "Spring Boot",
+        "Kotlin Multiplatform"
+      ],
+      "official_documentation": "https://kotlinlang.org/docs/home.html",
+      "jobs": [
+        "Android developer",
+        "Backend developer",
+        "Cross-platform mobile developer"
+      ],
+      "industries": [
+        "Mobile apps",
+        "Fintech",
+        "E-commerce",
+        "Startups"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "OOP",
+          "topics": [
+            "Classes, interfaces",
+            "Design patterns"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "Mobile fundamentals",
+          "topics": [
+            "App lifecycle",
+            "UI layouts",
+            "Navigation",
+            "Permissions"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "DSA",
+          "topics": [
+            "Core structures",
+            "Algorithms"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "CN",
+          "topics": [
+            "REST APIs",
+            "JSON"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "DBMS",
+          "topics": [
+            "SQLite / Room",
+            "Basic SQL"
+          ],
+          "depth": "basic"
+        }
+      ],
+      "recommended_degrees": [
+        "B.E./B.Tech in Computer Science",
+        "Information Technology",
+        "BCA/MCA"
+      ],
+      "related_skills": [
+        "Java basics",
+        "Material Design",
+        "Firebase",
+        "Play Store publishing",
+        "Coroutines"
+      ],
+      "useful_certifications": [
+        "Associate Android Developer (Google)"
+      ],
       "salary_demand_note": "Strong demand for Android roles in India and globally."
     },
     {
@@ -352,27 +1234,91 @@
       "level": "high-level",
       "level_description": "Apple's language for iPhone, iPad, Mac and Watch apps. It is fast and safe, hides memory details, but is tied closely to Apple's devices.",
       "first_released": 2014,
-      "paradigms": ["object-oriented", "functional", "protocol-oriented"],
+      "paradigms": [
+        "object-oriented",
+        "functional",
+        "protocol-oriented"
+      ],
       "execution": "compiled",
       "typing": "static, strong",
       "memory_management": "automatic reference counting",
       "learning_difficulty": "medium",
       "beginner_friendly": true,
-      "ides_and_editors": ["Xcode"],
-      "compilers_and_tools": ["Swift compiler", "Swift Package Manager", "Instruments"],
-      "frameworks": ["SwiftUI", "UIKit", "Combine", "Core Data"],
-      "official_documentation": "https://www.swift.org/documentation/",
-      "jobs": ["iOS developer", "macOS developer", "watchOS / visionOS developer", "Server-side Swift developer (rare)"],
-      "industries": ["Mobile apps", "Fintech", "Health", "Consumer products"],
-      "knowledge_required": [
-        { "subject": "OOP", "topics": ["Classes, structs, protocols", "Design patterns (MVC, MVVM)"], "depth": "in-depth" },
-        { "subject": "Mobile fundamentals", "topics": ["App lifecycle", "UI layouts", "Navigation"], "depth": "in-depth" },
-        { "subject": "DSA", "topics": ["Core structures", "Algorithms"], "depth": "intermediate" },
-        { "subject": "CN", "topics": ["REST APIs", "JSON"], "depth": "intermediate" }
+      "ides_and_editors": [
+        "Xcode"
       ],
-      "recommended_degrees": ["B.E./B.Tech in Computer Science", "Information Technology", "BCA/MCA"],
-      "related_skills": ["Apple Human Interface Guidelines", "App Store publishing", "Mac hardware required for development"],
-      "useful_certifications": ["Apple Developer Academy programs"],
+      "compilers_and_tools": [
+        "Swift compiler",
+        "Swift Package Manager",
+        "Instruments"
+      ],
+      "frameworks": [
+        "SwiftUI",
+        "UIKit",
+        "Combine",
+        "Core Data"
+      ],
+      "official_documentation": "https://www.swift.org/documentation/",
+      "jobs": [
+        "iOS developer",
+        "macOS developer",
+        "watchOS / visionOS developer",
+        "Server-side Swift developer (rare)"
+      ],
+      "industries": [
+        "Mobile apps",
+        "Fintech",
+        "Health",
+        "Consumer products"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "OOP",
+          "topics": [
+            "Classes, structs, protocols",
+            "Design patterns (MVC, MVVM)"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "Mobile fundamentals",
+          "topics": [
+            "App lifecycle",
+            "UI layouts",
+            "Navigation"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "DSA",
+          "topics": [
+            "Core structures",
+            "Algorithms"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "CN",
+          "topics": [
+            "REST APIs",
+            "JSON"
+          ],
+          "depth": "intermediate"
+        }
+      ],
+      "recommended_degrees": [
+        "B.E./B.Tech in Computer Science",
+        "Information Technology",
+        "BCA/MCA"
+      ],
+      "related_skills": [
+        "Apple Human Interface Guidelines",
+        "App Store publishing",
+        "Mac hardware required for development"
+      ],
+      "useful_certifications": [
+        "Apple Developer Academy programs"
+      ],
       "salary_demand_note": "Good pay; needs a Mac to develop."
     },
     {
@@ -381,27 +1327,96 @@
       "level": "high-level",
       "level_description": "Built for making websites. It runs on the server, produces the pages users see, and hides all machine details.",
       "first_released": 1995,
-      "paradigms": ["procedural", "object-oriented"],
+      "paradigms": [
+        "procedural",
+        "object-oriented"
+      ],
       "execution": "interpreted",
       "typing": "dynamic, weak (optional type hints)",
       "memory_management": "garbage collected",
       "learning_difficulty": "easy",
       "beginner_friendly": true,
-      "ides_and_editors": ["PhpStorm", "Visual Studio Code", "Sublime Text"],
-      "compilers_and_tools": ["Composer", "PHPUnit", "XAMPP / Laragon"],
-      "frameworks": ["Laravel", "Symfony", "WordPress", "CodeIgniter"],
-      "official_documentation": "https://www.php.net/docs.php",
-      "jobs": ["Backend web developer", "WordPress developer", "Laravel developer", "E-commerce developer", "Freelance web developer"],
-      "industries": ["Web agencies", "E-commerce", "Media and blogs", "Small business"],
-      "knowledge_required": [
-        { "subject": "Web fundamentals", "topics": ["HTML", "CSS", "JavaScript basics"], "depth": "intermediate" },
-        { "subject": "DBMS", "topics": ["MySQL", "Joins", "Indexing"], "depth": "in-depth" },
-        { "subject": "CN", "topics": ["HTTP", "Sessions and cookies", "Web security (injection, XSS)"], "depth": "intermediate" },
-        { "subject": "OOP", "topics": ["Classes and interfaces"], "depth": "intermediate" }
+      "ides_and_editors": [
+        "PhpStorm",
+        "Visual Studio Code",
+        "Sublime Text"
       ],
-      "recommended_degrees": ["BCA/MCA", "B.E./B.Tech in Computer Science", "Self-taught works well here"],
-      "related_skills": ["Laravel", "MySQL", "Git", "Hosting and deployment", "Payment gateway integration"],
-      "useful_certifications": ["Zend Certified PHP Engineer"],
+      "compilers_and_tools": [
+        "Composer",
+        "PHPUnit",
+        "XAMPP / Laragon"
+      ],
+      "frameworks": [
+        "Laravel",
+        "Symfony",
+        "WordPress",
+        "CodeIgniter"
+      ],
+      "official_documentation": "https://www.php.net/docs.php",
+      "jobs": [
+        "Backend web developer",
+        "WordPress developer",
+        "Laravel developer",
+        "E-commerce developer",
+        "Freelance web developer"
+      ],
+      "industries": [
+        "Web agencies",
+        "E-commerce",
+        "Media and blogs",
+        "Small business"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "Web fundamentals",
+          "topics": [
+            "HTML",
+            "CSS",
+            "JavaScript basics"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "DBMS",
+          "topics": [
+            "MySQL",
+            "Joins",
+            "Indexing"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "CN",
+          "topics": [
+            "HTTP",
+            "Sessions and cookies",
+            "Web security (injection, XSS)"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "OOP",
+          "topics": [
+            "Classes and interfaces"
+          ],
+          "depth": "intermediate"
+        }
+      ],
+      "recommended_degrees": [
+        "BCA/MCA",
+        "B.E./B.Tech in Computer Science",
+        "Self-taught works well here"
+      ],
+      "related_skills": [
+        "Laravel",
+        "MySQL",
+        "Git",
+        "Hosting and deployment",
+        "Payment gateway integration"
+      ],
+      "useful_certifications": [
+        "Zend Certified PHP Engineer"
+      ],
       "salary_demand_note": "Lots of freelance and agency work; salaries lower on average than some other backends."
     },
     {
@@ -410,27 +1425,88 @@
       "level": "high-level",
       "level_description": "A friendly, expressive language designed for programmer happiness. Very far from the hardware, and famous for building web apps quickly with Rails.",
       "first_released": 1995,
-      "paradigms": ["object-oriented", "functional elements"],
+      "paradigms": [
+        "object-oriented",
+        "functional elements"
+      ],
       "execution": "interpreted",
       "typing": "dynamic, strong",
       "memory_management": "garbage collected",
       "learning_difficulty": "easy",
       "beginner_friendly": true,
-      "ides_and_editors": ["RubyMine", "Visual Studio Code", "Sublime Text"],
-      "compilers_and_tools": ["RubyGems", "Bundler", "RSpec"],
-      "frameworks": ["Ruby on Rails", "Sinatra"],
-      "official_documentation": "https://www.ruby-lang.org/en/documentation/",
-      "jobs": ["Backend web developer", "Startup full-stack developer", "DevOps scripting"],
-      "industries": ["Startups", "SaaS", "E-commerce"],
-      "knowledge_required": [
-        { "subject": "OOP", "topics": ["Classes, modules, mixins"], "depth": "in-depth" },
-        { "subject": "DBMS", "topics": ["PostgreSQL", "ORM concepts"], "depth": "intermediate" },
-        { "subject": "CN", "topics": ["HTTP", "REST"], "depth": "intermediate" },
-        { "subject": "Web fundamentals", "topics": ["HTML", "CSS", "JavaScript"], "depth": "intermediate" }
+      "ides_and_editors": [
+        "RubyMine",
+        "Visual Studio Code",
+        "Sublime Text"
       ],
-      "recommended_degrees": ["B.E./B.Tech in Computer Science", "BCA/MCA", "Self-taught with projects"],
-      "related_skills": ["Rails conventions", "Testing", "Heroku or similar deployment", "Git"],
-      "useful_certifications": ["No major ones"],
+      "compilers_and_tools": [
+        "RubyGems",
+        "Bundler",
+        "RSpec"
+      ],
+      "frameworks": [
+        "Ruby on Rails",
+        "Sinatra"
+      ],
+      "official_documentation": "https://www.ruby-lang.org/en/documentation/",
+      "jobs": [
+        "Backend web developer",
+        "Startup full-stack developer",
+        "DevOps scripting"
+      ],
+      "industries": [
+        "Startups",
+        "SaaS",
+        "E-commerce"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "OOP",
+          "topics": [
+            "Classes, modules, mixins"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "DBMS",
+          "topics": [
+            "PostgreSQL",
+            "ORM concepts"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "CN",
+          "topics": [
+            "HTTP",
+            "REST"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "Web fundamentals",
+          "topics": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+          ],
+          "depth": "intermediate"
+        }
+      ],
+      "recommended_degrees": [
+        "B.E./B.Tech in Computer Science",
+        "BCA/MCA",
+        "Self-taught with projects"
+      ],
+      "related_skills": [
+        "Rails conventions",
+        "Testing",
+        "Heroku or similar deployment",
+        "Git"
+      ],
+      "useful_certifications": [
+        "No major ones"
+      ],
       "salary_demand_note": "Smaller job market than before, but steady in startups."
     },
     {
@@ -439,27 +1515,96 @@
       "level": "high-level (declarative query language)",
       "level_description": "You describe what data you want, not how to find it, and the database figures out the steps. It is not a general programming language but is needed almost everywhere.",
       "first_released": 1974,
-      "paradigms": ["declarative"],
+      "paradigms": [
+        "declarative"
+      ],
       "execution": "interpreted by a database engine",
       "typing": "static",
       "memory_management": "handled by the database",
       "learning_difficulty": "easy to start, deep to master",
       "beginner_friendly": true,
-      "ides_and_editors": ["DBeaver", "MySQL Workbench", "pgAdmin", "SQL Server Management Studio", "DataGrip", "Azure Data Studio"],
-      "compilers_and_tools": ["PostgreSQL", "MySQL", "SQL Server", "Oracle", "SQLite"],
+      "ides_and_editors": [
+        "DBeaver",
+        "MySQL Workbench",
+        "pgAdmin",
+        "SQL Server Management Studio",
+        "DataGrip",
+        "Azure Data Studio"
+      ],
+      "compilers_and_tools": [
+        "PostgreSQL",
+        "MySQL",
+        "SQL Server",
+        "Oracle",
+        "SQLite"
+      ],
       "official_documentation": "https://www.postgresql.org/docs/",
       "documentation_note": "SQL has no single owner. Use the documentation of the database you work with, such as PostgreSQL or MySQL (https://dev.mysql.com/doc/).",
-      "jobs": ["Data analyst", "Database administrator", "Business intelligence developer", "Data engineer", "Backend developer", "Report developer"],
-      "industries": ["Every industry that stores data"],
-      "knowledge_required": [
-        { "subject": "DBMS", "topics": ["Relational model", "Normalisation", "Transactions and ACID", "Indexing", "Query optimisation"], "depth": "in-depth" },
-        { "subject": "Statistics", "topics": ["Descriptive statistics", "Reading trends in data"], "depth": "intermediate (for analyst roles)" },
-        { "subject": "DSA", "topics": ["Trees (how indexes work)", "Hashing"], "depth": "basic" },
-        { "subject": "Data warehousing", "topics": ["Star schemas", "ETL"], "depth": "intermediate (for data engineering)" }
+      "jobs": [
+        "Data analyst",
+        "Database administrator",
+        "Business intelligence developer",
+        "Data engineer",
+        "Backend developer",
+        "Report developer"
       ],
-      "recommended_degrees": ["B.E./B.Tech in Computer Science", "Statistics", "Commerce or Business Analytics", "BCA/MCA"],
-      "related_skills": ["Excel", "Power BI or Tableau", "Python or R", "Cloud data platforms"],
-      "useful_certifications": ["Microsoft DP-300", "Oracle Database SQL Certified Associate", "Google Data Analytics"],
+      "industries": [
+        "Every industry that stores data"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "DBMS",
+          "topics": [
+            "Relational model",
+            "Normalisation",
+            "Transactions and ACID",
+            "Indexing",
+            "Query optimisation"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "Statistics",
+          "topics": [
+            "Descriptive statistics",
+            "Reading trends in data"
+          ],
+          "depth": "intermediate (for analyst roles)"
+        },
+        {
+          "subject": "DSA",
+          "topics": [
+            "Trees (how indexes work)",
+            "Hashing"
+          ],
+          "depth": "basic"
+        },
+        {
+          "subject": "Data warehousing",
+          "topics": [
+            "Star schemas",
+            "ETL"
+          ],
+          "depth": "intermediate (for data engineering)"
+        }
+      ],
+      "recommended_degrees": [
+        "B.E./B.Tech in Computer Science",
+        "Statistics",
+        "Commerce or Business Analytics",
+        "BCA/MCA"
+      ],
+      "related_skills": [
+        "Excel",
+        "Power BI or Tableau",
+        "Python or R",
+        "Cloud data platforms"
+      ],
+      "useful_certifications": [
+        "Microsoft DP-300",
+        "Oracle Database SQL Certified Associate",
+        "Google Data Analytics"
+      ],
       "salary_demand_note": "Appears in a huge share of tech and analytics job posts."
     },
     {
@@ -468,26 +1613,94 @@
       "level": "high-level",
       "level_description": "A language built by statisticians for analysing data and drawing charts. It is far from the hardware and focuses on statistics rather than general software.",
       "first_released": 1993,
-      "paradigms": ["functional", "array-oriented", "object-oriented"],
+      "paradigms": [
+        "functional",
+        "array-oriented",
+        "object-oriented"
+      ],
       "execution": "interpreted",
       "typing": "dynamic",
       "memory_management": "garbage collected",
       "learning_difficulty": "medium",
       "beginner_friendly": true,
-      "ides_and_editors": ["RStudio (Posit)", "Visual Studio Code", "Jupyter"],
-      "compilers_and_tools": ["CRAN", "tidyverse", "ggplot2", "Shiny"],
-      "official_documentation": "https://www.r-project.org/other-docs.html",
-      "jobs": ["Statistician", "Biostatistician", "Data analyst", "Research scientist", "Bioinformatics analyst", "Quantitative analyst"],
-      "industries": ["Healthcare and pharma", "Academia", "Government", "Finance", "Genomics"],
-      "knowledge_required": [
-        { "subject": "Statistics", "topics": ["Hypothesis testing", "Regression", "Probability distributions", "Experiment design"], "depth": "in-depth" },
-        { "subject": "Mathematics", "topics": ["Linear algebra", "Calculus basics"], "depth": "intermediate" },
-        { "subject": "DBMS", "topics": ["SQL"], "depth": "basic" },
-        { "subject": "Domain knowledge", "topics": ["Biology, medicine or finance depending on the job"], "depth": "intermediate" }
+      "ides_and_editors": [
+        "RStudio (Posit)",
+        "Visual Studio Code",
+        "Jupyter"
       ],
-      "recommended_degrees": ["Statistics", "Biostatistics", "Mathematics", "Data Science", "Life Sciences with analytics"],
-      "related_skills": ["Data visualisation", "Reproducible reports (R Markdown)", "Python as a second tool"],
-      "useful_certifications": ["Google Data Analytics", "Johns Hopkins Data Science (Coursera)", "SAS certifications (often paired)"],
+      "compilers_and_tools": [
+        "CRAN",
+        "tidyverse",
+        "ggplot2",
+        "Shiny"
+      ],
+      "official_documentation": "https://www.r-project.org/other-docs.html",
+      "jobs": [
+        "Statistician",
+        "Biostatistician",
+        "Data analyst",
+        "Research scientist",
+        "Bioinformatics analyst",
+        "Quantitative analyst"
+      ],
+      "industries": [
+        "Healthcare and pharma",
+        "Academia",
+        "Government",
+        "Finance",
+        "Genomics"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "Statistics",
+          "topics": [
+            "Hypothesis testing",
+            "Regression",
+            "Probability distributions",
+            "Experiment design"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "Mathematics",
+          "topics": [
+            "Linear algebra",
+            "Calculus basics"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "DBMS",
+          "topics": [
+            "SQL"
+          ],
+          "depth": "basic"
+        },
+        {
+          "subject": "Domain knowledge",
+          "topics": [
+            "Biology, medicine or finance depending on the job"
+          ],
+          "depth": "intermediate"
+        }
+      ],
+      "recommended_degrees": [
+        "Statistics",
+        "Biostatistics",
+        "Mathematics",
+        "Data Science",
+        "Life Sciences with analytics"
+      ],
+      "related_skills": [
+        "Data visualisation",
+        "Reproducible reports (R Markdown)",
+        "Python as a second tool"
+      ],
+      "useful_certifications": [
+        "Google Data Analytics",
+        "Johns Hopkins Data Science (Coursera)",
+        "SAS certifications (often paired)"
+      ],
       "salary_demand_note": "Strong in pharma, research and academia."
     },
     {
@@ -496,28 +1709,94 @@
       "level": "high-level",
       "level_description": "Google's language, mostly used with Flutter to build one app that runs on Android, iOS, web and desktop. It hides hardware details completely.",
       "first_released": 2011,
-      "paradigms": ["object-oriented", "functional elements"],
+      "paradigms": [
+        "object-oriented",
+        "functional elements"
+      ],
       "execution": "compiled (native) and just-in-time during development",
       "typing": "static, strong",
       "memory_management": "garbage collected",
       "learning_difficulty": "easy",
       "beginner_friendly": true,
-      "ides_and_editors": ["Android Studio", "Visual Studio Code", "IntelliJ IDEA"],
-      "compilers_and_tools": ["Dart SDK", "Flutter SDK", "pub.dev packages"],
-      "frameworks": ["Flutter"],
-      "official_documentation": "https://dart.dev/guides",
-      "jobs": ["Flutter developer", "Cross-platform mobile developer", "Mobile app freelancer"],
-      "industries": ["Mobile apps", "Startups", "Agencies"],
-      "knowledge_required": [
-        { "subject": "OOP", "topics": ["Classes, mixins, interfaces"], "depth": "intermediate" },
-        { "subject": "Mobile fundamentals", "topics": ["App lifecycle", "State management", "Navigation"], "depth": "in-depth" },
-        { "subject": "CN", "topics": ["REST APIs", "JSON"], "depth": "intermediate" },
-        { "subject": "DBMS", "topics": ["Local storage", "Firebase basics"], "depth": "basic" },
-        { "subject": "Design sense", "topics": ["UI layout", "Material Design"], "depth": "basic" }
+      "ides_and_editors": [
+        "Android Studio",
+        "Visual Studio Code",
+        "IntelliJ IDEA"
       ],
-      "recommended_degrees": ["B.E./B.Tech in Computer Science", "BCA/MCA", "Self-taught with published apps"],
-      "related_skills": ["Firebase", "State management (Provider, Riverpod, Bloc)", "Play Store and App Store publishing"],
-      "useful_certifications": ["No major vendor ones; published apps count"],
+      "compilers_and_tools": [
+        "Dart SDK",
+        "Flutter SDK",
+        "pub.dev packages"
+      ],
+      "frameworks": [
+        "Flutter"
+      ],
+      "official_documentation": "https://dart.dev/guides",
+      "jobs": [
+        "Flutter developer",
+        "Cross-platform mobile developer",
+        "Mobile app freelancer"
+      ],
+      "industries": [
+        "Mobile apps",
+        "Startups",
+        "Agencies"
+      ],
+      "knowledge_required": [
+        {
+          "subject": "OOP",
+          "topics": [
+            "Classes, mixins, interfaces"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "Mobile fundamentals",
+          "topics": [
+            "App lifecycle",
+            "State management",
+            "Navigation"
+          ],
+          "depth": "in-depth"
+        },
+        {
+          "subject": "CN",
+          "topics": [
+            "REST APIs",
+            "JSON"
+          ],
+          "depth": "intermediate"
+        },
+        {
+          "subject": "DBMS",
+          "topics": [
+            "Local storage",
+            "Firebase basics"
+          ],
+          "depth": "basic"
+        },
+        {
+          "subject": "Design sense",
+          "topics": [
+            "UI layout",
+            "Material Design"
+          ],
+          "depth": "basic"
+        }
+      ],
+      "recommended_degrees": [
+        "B.E./B.Tech in Computer Science",
+        "BCA/MCA",
+        "Self-taught with published apps"
+      ],
+      "related_skills": [
+        "Firebase",
+        "State management (Provider, Riverpod, Bloc)",
+        "Play Store and App Store publishing"
+      ],
+      "useful_certifications": [
+        "No major vendor ones; published apps count"
+      ],
       "salary_demand_note": "Growing in startups that want one codebase for many platforms."
     }
   ]
