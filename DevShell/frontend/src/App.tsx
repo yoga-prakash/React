@@ -1,4 +1,6 @@
+import { Routes, Route } from "react-router-dom";
 import Card from './components/Card';
+import Details from './components/Details';
 import { type Cards } from './types';
 
 import { useState, useEffect } from 'react';
@@ -21,6 +23,9 @@ export default function App() {
             <div className="language-grid">
                 {cards.length > 0 && cards.map(card => <Card key={card.id} card={card} />)}
             </div>
+            <Routes>
+                <Route path="/language/:id" />
+            </Routes>
         </>
     );
 };

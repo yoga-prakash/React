@@ -11,6 +11,7 @@ const Card = z.object({
 
 const CardDetails = z.object({
     id: z.number().int(),
+    name: z.string(),
     first_released: z.number().int(),
     memory_management: z.string().max(100),
     execution: z.string().max(100),

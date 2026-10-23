@@ -1,10 +1,11 @@
 import type { Cards } from '../types';
+import { useNavigate } from 'react-router-dom';
 import './Card.css';
 
 export default function Card({ card }: { card: Cards }) {
-    function handleCardClick(cardId: number) { console.log(cardId); };
+    const navigate = useNavigate();
     return (
-        <article className="language-card" onClick={() => handleCardClick(card.id)}>
+        <article className="language-card" onClick={() => navigate(`/languages/${card.id}`)}>
             <img
                 className="language-card__image"
                 src={`/${card.name}.png`}
