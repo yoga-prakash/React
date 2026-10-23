@@ -23,12 +23,12 @@ langController.get("/:id", (req, res) => {
     const freeLanguageResources = giveResources(Number(result.data), languageResource);
     const subjectResources = giveSubjectResources(subjects, requiredSubjects);
 
-    res.status(200).json({
+    res.status(200).json([
         individualCardDescription,
         freeLanguageResources,
         subjectResources,
         abbs,
-    });
+    ]);
 });
 
 

@@ -20,11 +20,13 @@ export default function App() {
 
     return (
         <>
-            <div className="language-grid">
-                {cards.length > 0 && cards.map(card => <Card key={card.id} card={card} />)}
-            </div>
             <Routes>
-                <Route path="/language/:id" />
+                <Route path="/" element={
+                    <div className="language-grid">
+                        {cards.length > 0 && cards.map(card => <Card key={card.id} card={card} />)}
+                    </div>}
+                />
+                <Route path="/languages/:id" element={<Details />} />
             </Routes>
         </>
     );
