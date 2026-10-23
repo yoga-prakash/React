@@ -1,52 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import type { LanguageResponse } from '../types';
 import './details.css';
-
-type Resource = {
-    name: string;
-    url?: string;
-    cost?: string;
-    why?: string;
-};
-
-type Knowledge = {
-    subject: string;
-    topics: string[];
-    depth: string;
-};
-
-type LanguageDetails = {
-    id: number;
-    name: string;
-    first_released: number;
-    memory_management: string;
-    execution: string;
-    ides_and_editors: string[];
-    jobs: string[];
-    knowledge_required: Knowledge[];
-};
-
-type LanguageResources = {
-    language_id: number;
-    name: string;
-    best_free: Resource;
-    practice: Resource;
-    reference: Resource;
-};
-
-type SubjectResource = {
-    subject: string;
-    name: string;
-    best_free: Resource;
-    practice: Resource;
-};
-
-type LanguageResponse = [
-    LanguageDetails,
-    LanguageResources,
-    SubjectResource[],
-    Record<string, string>
-];
 
 export default function Details() {
     const { id } = useParams();
