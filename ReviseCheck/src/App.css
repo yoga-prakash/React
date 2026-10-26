@@ -1,0 +1,246 @@
+/* ---------- Theme ---------- */
+:root {
+    --bg: #f1f5f9;
+    --surface: #ffffff;
+    --border: #e2e8f0;
+    --text: #0f172a;
+    --muted: #64748b;
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --radius: 12px;
+    --shadow: 0 1px 3px rgba(15, 23, 42, 0.08), 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+body {
+    margin: 0;
+    display: block;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Page layout ---------- */
+.pdf-info {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 32px 24px 48px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 24px;
+    row-gap: 16px;
+    align-items: start;
+}
+
+/* children order: form, frame1, p1, prev1, next1, frame2, p2, prev2, next2 */
+.pdf-info>.pdf-submission-form {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+.pdf-info>.pdf-frame:nth-child(2) {
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+.pdf-info>p:nth-child(3) {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+
+.pdf-info>button:nth-child(4) {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.pdf-info>button:nth-child(5) {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.pdf-info>.pdf-frame:nth-child(6) {
+    grid-column: 3 / 5;
+    grid-row: 2;
+}
+
+.pdf-info>p:nth-child(7) {
+    grid-column: 3 / 5;
+    grid-row: 3;
+}
+
+.pdf-info>button:nth-child(8) {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.pdf-info>button:nth-child(9) {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+/* Previous button on the right of its cell, Next on the left */
+.pdf-info>button:nth-child(4),
+.pdf-info>button:nth-child(8) {
+    justify-self: end;
+}
+
+.pdf-info>button:nth-child(5),
+.pdf-info>button:nth-child(9) {
+    justify-self: start;
+}
+
+/* ---------- Upload form card ---------- */
+.pdf-submission-form {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 24px;
+}
+
+.pdf-submission-form form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.pdf-submission-form label {
+    flex: 1 1 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.pdf-submission-form input[type="file"] {
+    padding: 10px;
+    border: 2px dashed var(--border);
+    border-radius: 10px;
+    background: #f8fafc;
+    color: var(--muted);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.pdf-submission-form input[type="file"]:hover {
+    border-color: var(--primary);
+    background: #eef2ff;
+}
+
+.pdf-submission-form input[type="file"]::file-selector-button {
+    margin-right: 12px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.pdf-submission-form input[type="file"]::file-selector-button:hover {
+    background: var(--primary-hover);
+}
+
+/* ---------- Buttons ---------- */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: var(--primary);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+button:hover:not(:disabled) {
+    background: var(--primary-hover);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+button:active:not(:disabled) {
+    transform: translateY(1px);
+}
+
+button:focus-visible {
+    outline: 3px solid #c7d2fe;
+    outline-offset: 2px;
+}
+
+button:disabled {
+    background: #cbd5e1;
+    color: #94a3b8;
+    cursor: not-allowed;
+}
+
+/* Previous / Next buttons: secondary look */
+.pdf-info>button {
+    background: var(--surface);
+    color: var(--primary);
+    border: 1px solid var(--border);
+}
+
+.pdf-info>button:hover:not(:disabled) {
+    background: #eef2ff;
+    box-shadow: none;
+}
+
+.pdf-info>button:disabled {
+    background: #f1f5f9;
+    color: #94a3b8;
+}
+
+/* ---------- PDF viewer ---------- */
+.pdf-info>.pdf-frame {
+    min-width: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.react-pdf__Page {
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.15);
+}
+
+/* Page X of Y */
+.pdf-info>p {
+    margin: 0;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--muted);
+}
+
+/* ---------- Small screens: stack everything ---------- */
+@media (max-width: 1100px) {
+    .pdf-info {
+        display: block;
+        text-align: center;
+    }
+
+    .pdf-info>.pdf-submission-form,
+    .pdf-info>.pdf-frame,
+    .pdf-info>p {
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .pdf-info>.pdf-submission-form {
+        text-align: left;
+    }
+
+    .pdf-info>button {
+        margin: 0 6px 32px;
+    }
+}
