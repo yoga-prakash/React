@@ -1,4 +1,3 @@
-/* ---------- Theme ---------- */
 :root {
     --bg: #f1f5f9;
     --surface: #ffffff;
@@ -8,7 +7,12 @@
     --primary: #4f46e5;
     --primary-hover: #4338ca;
     --radius: 12px;
-    --shadow: 0 1px 3px rgba(15, 23, 42, 0.08), 0 8px 24px rgba(15, 23, 42, 0.06);
+    --shadow: 0 1px 3px rgba(15, 23, 42, 0.08),
+        0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -16,81 +20,52 @@ body {
     display: block;
     background: var(--bg);
     color: var(--text);
-    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI",
+        Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
-/* ---------- Page layout ---------- */
+button,
+input {
+    font: inherit;
+}
+
+
+/* =========================================================
+   2. MAIN PAGE
+   ========================================================= */
+
 .pdf-info {
-    max-width: 1400px;
+    width: 100%;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 32px 24px 48px;
+
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    column-gap: 24px;
-    row-gap: 16px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
     align-items: start;
 }
 
-/* children order: form, frame1, p1, prev1, next1, frame2, p2, prev2, next2 */
-.pdf-info>.pdf-submission-form {
+.pdf-info>* {
+    min-width: 0;
+}
+
+.pdf-info>.pdf-submission-form,
+.pdf-info>.comparison-summary,
+.pdf-info>.comparison-layout,
+.pdf-info>.comparison-status,
+.pdf-info>.comparison-error {
     grid-column: 1 / -1;
-    grid-row: 1;
 }
 
-.pdf-info>.pdf-frame:nth-child(2) {
-    grid-column: 1 / 3;
-    grid-row: 2;
-}
 
-.pdf-info>p:nth-child(3) {
-    grid-column: 1 / 3;
-    grid-row: 3;
-}
+/* =========================================================
+   3. UPLOAD FORM
+   ========================================================= */
 
-.pdf-info>button:nth-child(4) {
-    grid-column: 1;
-    grid-row: 4;
-}
-
-.pdf-info>button:nth-child(5) {
-    grid-column: 2;
-    grid-row: 4;
-}
-
-.pdf-info>.pdf-frame:nth-child(6) {
-    grid-column: 3 / 5;
-    grid-row: 2;
-}
-
-.pdf-info>p:nth-child(7) {
-    grid-column: 3 / 5;
-    grid-row: 3;
-}
-
-.pdf-info>button:nth-child(8) {
-    grid-column: 3;
-    grid-row: 4;
-}
-
-.pdf-info>button:nth-child(9) {
-    grid-column: 4;
-    grid-row: 4;
-}
-
-/* Previous button on the right of its cell, Next on the left */
-.pdf-info>button:nth-child(4),
-.pdf-info>button:nth-child(8) {
-    justify-self: end;
-}
-
-.pdf-info>button:nth-child(5),
-.pdf-info>button:nth-child(9) {
-    justify-self: start;
-}
-
-/* ---------- Upload form card ---------- */
 .pdf-submission-form {
+    width: 100%;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -107,22 +82,30 @@ body {
 
 .pdf-submission-form label {
     flex: 1 1 280px;
+    min-width: 0;
+
     display: flex;
     flex-direction: column;
     gap: 8px;
+
     font-size: 0.9rem;
     font-weight: 600;
     color: var(--text);
 }
 
 .pdf-submission-form input[type="file"] {
+    width: 100%;
+    min-width: 0;
     padding: 10px;
+
     border: 2px dashed var(--border);
     border-radius: 10px;
+
     background: #f8fafc;
     color: var(--muted);
     font-size: 0.85rem;
     cursor: pointer;
+
     transition: border-color 0.2s, background 0.2s;
 }
 
@@ -134,12 +117,15 @@ body {
 .pdf-submission-form input[type="file"]::file-selector-button {
     margin-right: 12px;
     padding: 8px 14px;
+
     border: none;
     border-radius: 8px;
+
     background: var(--primary);
     color: #fff;
     font-weight: 600;
     cursor: pointer;
+
     transition: background 0.2s;
 }
 
@@ -147,17 +133,27 @@ body {
     background: var(--primary-hover);
 }
 
-/* ---------- Buttons ---------- */
+
+/* =========================================================
+   4. GENERAL BUTTONS
+   ========================================================= */
+
 button {
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
+
     background: var(--primary);
     color: #fff;
+
     font-size: 0.9rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+
+    transition:
+        background 0.2s,
+        transform 0.1s,
+        box-shadow 0.2s;
 }
 
 button:hover:not(:disabled) {
@@ -178,69 +174,405 @@ button:disabled {
     background: #cbd5e1;
     color: #94a3b8;
     cursor: not-allowed;
-}
-
-/* Previous / Next buttons: secondary look */
-.pdf-info>button {
-    background: var(--surface);
-    color: var(--primary);
-    border: 1px solid var(--border);
-}
-
-.pdf-info>button:hover:not(:disabled) {
-    background: #eef2ff;
     box-shadow: none;
 }
 
-.pdf-info>button:disabled {
-    background: #f1f5f9;
-    color: #94a3b8;
-}
 
-/* ---------- PDF viewer ---------- */
-.pdf-info>.pdf-frame {
+/* =========================================================
+   5. COMPARISON SUMMARY
+   ========================================================= */
+
+.comparison-summary,
+.differences-panel,
+.pdf-viewer-panel {
     min-width: 0;
+
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
-    padding: 16px;
-    box-sizing: border-box;
+    padding: 20px;
+}
+
+.comparison-summary h2,
+.differences-panel h2,
+.pdf-viewer-panel h2 {
+    margin: 0 0 16px;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.comparison-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.comparison-stats span {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 12px;
+    border-radius: 8px;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.stat-added {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.stat-removed {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.stat-changed {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+
+/* =========================================================
+   6. LOADING AND ERROR MESSAGES
+   ========================================================= */
+
+.comparison-status {
+    margin: 0;
+    padding: 12px 16px;
+    color: var(--muted);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.comparison-error {
+    margin: 0;
+    padding: 12px 16px;
+
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+
+    background: #fef2f2;
+    color: #991b1b;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   7. MAIN COMPARISON LAYOUT
+   ========================================================= */
+
+.comparison-layout {
+    display: grid;
+    grid-template-columns:
+        minmax(240px, 0.75fr) minmax(0, 2.25fr);
+
+    gap: 20px;
+    align-items: start;
+}
+
+
+/* =========================================================
+   8. DIFFERENCES SIDEBAR
+   ========================================================= */
+
+.differences-panel {
+    position: sticky;
+    top: 16px;
+
+    max-height: 80vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.difference-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.difference-list li {
+    margin: 0;
+    padding: 0;
+}
+
+.difference-item {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+
+    padding: 12px;
+    text-align: left;
+
+    color: var(--text);
+    background: #fff;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    box-shadow: none;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+.difference-item:hover:not(:disabled) {
+    background: #f8fafc;
+    box-shadow: none;
+}
+
+.difference-item.is-selected {
+    outline: 2px solid var(--primary);
+    outline-offset: -2px;
+    background: #eef2ff;
+}
+
+.difference-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    font-size: 0.78rem;
+}
+
+.difference-meta strong {
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.difference-meta span {
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+.difference-old,
+.difference-new {
+    display: block;
+
+    font-size: 0.85rem;
+    line-height: 1.5;
+
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.difference-old {
+    color: #b91c1c;
+}
+
+.difference-new {
+    color: #15803d;
+}
+
+
+/* =========================================================
+   9. SIDE-BY-SIDE PDF VIEWERS
+   ========================================================= */
+
+.pdf-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    align-items: start;
+}
+
+.pdf-viewer-panel {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.pdf-viewer-panel h2 {
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   10. PDF FRAME AND PAGE
+   ========================================================= */
+
+.pdf-frame {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+
+    background: var(--surface);
+}
+
+.pdf-viewer-panel .pdf-frame {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+}
+
+.pdf-page-wrapper {
+    position: relative;
+
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.react-pdf__Document {
+    width: 100%;
 }
 
 .react-pdf__Page {
+    position: relative;
     margin: 0 auto;
+    background: #fff;
+
     box-shadow: 0 2px 8px rgba(15, 23, 42, 0.15);
 }
 
-/* Page X of Y */
-.pdf-info>p {
-    margin: 0;
-    text-align: center;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--muted);
+.react-pdf__Page canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-/* ---------- Small screens: stack everything ---------- */
+
+/* =========================================================
+   11. HIGHLIGHTS
+   ========================================================= */
+
+.pdf-highlight {
+    position: absolute;
+    z-index: 5;
+
+    box-sizing: border-box;
+    pointer-events: none;
+    border-radius: 2px;
+}
+
+.pdf-highlight--added,
+.pdf-highlight--changed-new {
+    background: rgba(34, 197, 94, 0.28);
+    border: 1px solid rgba(22, 163, 74, 0.85);
+}
+
+.pdf-highlight--removed,
+.pdf-highlight--changed-old {
+    background: rgba(239, 68, 68, 0.25);
+    border: 1px solid rgba(220, 38, 38, 0.85);
+}
+
+
+/* =========================================================
+   12. PDF PAGE NAVIGATION
+   ========================================================= */
+
+.pdf-viewer-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-top: 16px;
+}
+
+.pdf-viewer-controls p {
+    flex-basis: 100%;
+    margin: 0;
+
+    color: var(--muted);
+    text-align: center;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.pdf-viewer-controls button {
+    padding: 8px 14px;
+
+    background: var(--surface);
+    color: var(--primary);
+
+    border: 1px solid var(--border);
+    box-shadow: none;
+}
+
+.pdf-viewer-controls button:hover:not(:disabled) {
+    background: #eef2ff;
+    box-shadow: none;
+}
+
+.pdf-viewer-controls button:disabled {
+    background: #f1f5f9;
+    color: #94a3b8;
+}
+
+
+/* =========================================================
+   13. RESPONSIVE LAYOUT
+   ========================================================= */
+
 @media (max-width: 1100px) {
     .pdf-info {
-        display: block;
-        text-align: center;
+        padding: 24px 18px 40px;
+        gap: 16px;
     }
 
-    .pdf-info>.pdf-submission-form,
-    .pdf-info>.pdf-frame,
-    .pdf-info>p {
-        margin-bottom: 16px;
-        text-align: center;
+    .comparison-layout {
+        grid-template-columns: minmax(0, 1fr);
     }
 
-    .pdf-info>.pdf-submission-form {
-        text-align: left;
+    .differences-panel {
+        position: static;
+        max-height: 420px;
     }
 
-    .pdf-info>button {
-        margin: 0 6px 32px;
+    .pdf-columns {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .pdf-info {
+        padding: 16px 12px 32px;
+        gap: 14px;
+    }
+
+    .pdf-submission-form,
+    .comparison-summary,
+    .differences-panel,
+    .pdf-viewer-panel {
+        padding: 14px;
+    }
+
+    .pdf-submission-form form {
+        gap: 16px;
+    }
+
+    .pdf-submission-form label {
+        flex-basis: 100%;
+    }
+
+    .pdf-columns {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .comparison-stats {
+        gap: 8px;
+    }
+
+    .comparison-stats span {
+        font-size: 0.8rem;
     }
 }
