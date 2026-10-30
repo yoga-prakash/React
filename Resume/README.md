@@ -8,6 +8,7 @@
 - `education`: an array of objects, each with `id` (number) and strings `study`, `university`, `address`, `marks`.
 
 **src/personalProjects.mjs** (named export `projects`): an array of objects, each with:
+
 - `id` (number)
 - `name`, `stack` (comma-separated), `date` (e.g. "August 2026"), `github` (can be `""`), all strings
 - `points`: an array of HTML strings, each wrapped in `<li>`, for example

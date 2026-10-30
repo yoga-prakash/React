@@ -1,71 +1,289 @@
-body {
-    line-height: 1.3;
+/* body {
+  line-height: 1.3;
 }
 
 hr {
-    height: 2px;
-    background-color: grey;
-    border: none;
-    border-radius: 2px;
-    width: 100%;
+  height: 2px;
+  background-color: grey;
+  border: none;
+  border-radius: 2px;
+  width: 100%;
 }
 
 .heading {
-    color: #3498db;
+  color: #3498db;
 }
 
 #name {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: start;
-    gap: 6px 40px;
-    font-size: 0.95em;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  gap: 6px 40px;
+  font-size: 0.95em;
 }
 
 .contact-grid div {
-    min-width: 0;
-    white-space: nowrap;
+  min-width: 0;
+  white-space: nowrap;
 }
 
-a, a:visited {
-    color: #0000ee;
+a,
+a:visited {
+  color: #0000ee;
 }
 
 .marks {
-    background-color: beige;
+  background-color: beige;
 }
 
-p, li {
-    text-align: justify;
-    hyphens: auto;
+p,
+li {
+  text-align: justify;
+  hyphens: auto;
 }
 
 .links-github li {
-    text-align: left;
+  text-align: left;
 }
 
 .project-header {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
 }
 
 .project-date {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 h2 {
-    break-after: avoid;
+  break-after: avoid;
 }
 
 @media print {
-    .project-block {
-        break-inside: avoid;
-        page-break-inside: avoid;
-    }
+  .project-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+} */
+
+
+
+
+
+/* General document styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  line-height: 1.35;
+  color: #222;
+  max-width: 210mm;
+  margin: 0 auto;
+}
+
+/* Horizontal separators */
+hr {
+  height: 1px;
+  background-color: #888;
+  border: none;
+  width: 100%;
+  margin: 11px 0;
+}
+
+/* Section headings */
+.heading {
+  color: #2878a8;
+  font-size: 13pt;
+  margin: 13px 0 8px;
+}
+
+#name {
+  display: flex;
+  justify-content: center;
+  font-size: 20pt;
+  margin: 0 0 10px;
+}
+
+/* Contact information */
+.contact-grid {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: center;
+  gap: 6px 25px;
+  font-size: 9pt;
+  margin-bottom: 11px;
+}
+
+.contact-grid div {
+  min-width: 0;
+  white-space: nowrap;
+}
+
+/* Links */
+a,
+a:visited {
+  color: #0000ee;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+/* Introductory paragraph */
+header p {
+  margin: 9px 0;
+  line-height: 1.4;
+}
+
+/* Skills */
+#skills ol {
+  margin: 7px 0 10px;
+  padding-left: 20px;
+}
+
+#skills li {
+  margin-bottom: 5px;
+}
+
+/* Project sections */
+.project-block {
+  margin-bottom: 14px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin: 8px 0 5px;
+}
+
+.project-header span {
+  line-height: 1.35;
+}
+
+.project-lists {
+  margin: 5px 0 7px;
+  padding-left: 20px;
+}
+
+.project-lists li {
+  margin-bottom: 6px;
+  line-height: 1.35;
+}
+
+/* GitHub links */
+.project-block>p:last-child {
+  margin: 5px 0 8px;
+}
+
+/* Education */
+#education p {
+  margin: 8px 0;
+  line-height: 1.35;
+}
+
+.marks {
+  background-color: beige;
+  padding: 3px 5px;
+}
+
+/* Certifications */
+#certificates ol {
+  margin: 7px 0;
+  padding-left: 20px;
+}
+
+#certificates li {
+  margin-bottom: 6px;
+  line-height: 1.35;
+}
+
+/* Text alignment */
+p,
+li {
+  text-align: left;
+  hyphens: auto;
+  overflow-wrap: anywhere;
+}
+
+.links-github li {
+  text-align: left;
+}
+
+/* Prevent heading separation */
+h2 {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+/* Print and PDF layout */
+@page {
+  size: A4;
+  margin: 12mm 14mm;
+}
+
+@media print {
+  body {
+    width: auto;
+    max-width: none;
+    margin: 0;
+    font-size: 9.5pt;
+    line-height: 1.3;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .heading {
+    font-size: 12pt;
+    margin: 11px 0 7px;
+  }
+
+  hr {
+    margin: 9px 0;
+  }
+
+  /* Start project 4 on a new page */
+  .new-page {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  /* Keep individual projects together */
+  .project-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 12px;
+  }
+
+  .project-header,
+  h2 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .project-lists li {
+    margin-bottom: 5px;
+    line-height: 1.3;
+  }
+
+  #education p {
+    margin: 7px 0;
+  }
+
+  #certificates li {
+    margin-bottom: 5px;
+  }
+
+  li {
+    orphans: 2;
+    widows: 2;
+  }
+
+  a,
+  a:visited {
+    color: #0000ee;
+  }
 }

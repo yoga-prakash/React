@@ -23,4 +23,4 @@ export const education = [
     address: "Example City, State",
     marks: "Percentage: 85%",
   },
-];
+]; 
